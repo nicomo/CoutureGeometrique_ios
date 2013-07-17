@@ -68,11 +68,11 @@ NSArray* chapters;
     }
 
     cell.primaryLabel.text = [chapters objectAtIndex:indexPath.row];
-    
-    UIView *myBackView = [[UIView alloc] initWithFrame:cell.frame];
-    myBackView.backgroundColor = [UIColor colorWithRed:0.0 green:0.64 blue:0.80 alpha:1];
-    cell.selectedBackgroundView = myBackView;
-    [myBackView release];
+
+    UIImageView* activeimgview = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"active.png"]];
+    activeimgview.frame = CGRectMake(216, 0, 40, 40);
+    cell.selectedBackgroundView = activeimgview;
+    [activeimgview release];
     
     return cell;
 }
