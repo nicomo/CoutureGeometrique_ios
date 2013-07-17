@@ -7,8 +7,10 @@
 //
 
 #import "MasterViewController.h"
+#import "AppDelegate.h"
 #import "UIMasterViewCell.h"
 #import <QuartzCore/QuartzCore.h>
+NSArray* chapters;
 
 @interface MasterViewController () <UITableViewDataSource, UITableViewDelegate>
 
@@ -36,7 +38,6 @@
     self.tableView.showsVerticalScrollIndicator = NO;
     self.tableView.tableFooterView = [[[UIView alloc] init] autorelease];
     self.tableView.backgroundColor = [UIColor colorWithRed:.13 green:.13 blue:.13 alpha:1];
-
 }
 
 - (void)didReceiveMemoryWarning
@@ -66,49 +67,7 @@
         cell = [[[UIMasterViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:MasterCellIdentifier] autorelease];
     }
 
-    switch (indexPath.row) {
-        case 0:
-            cell.primaryLabel.text = @"Introduction";
-            break;
-        case 1:
-            cell.primaryLabel.text = @"Conseils Techniques";
-            break;
-        case 2:
-            cell.primaryLabel.text = @"Le top à manches kimono";
-            break;
-        case 3:
-            cell.primaryLabel.text = @"La cape cache-cœur";
-            break;
-        case 4:
-            cell.primaryLabel.text = @"La robe « Y »";
-            break;
-        case 5:
-            cell.primaryLabel.text = @"La jupe modulable à plis";
-            break;
-        case 6:
-            cell.primaryLabel.text = @"Le chauffe-épaules";
-            break;
-        case 7:
-            cell.primaryLabel.text = @"Le tablier girly";
-            break;
-        case 8:
-            cell.primaryLabel.text = @"La ceinture obi origami";
-            break;
-        case 9:
-            cell.primaryLabel.text = @"Le bandeau vintage";
-            break;
-        case 10:
-            cell.primaryLabel.text = @"La broche pétales";
-            break;
-        case 11:
-            cell.primaryLabel.text = @"Une pochette pour ma tablette";
-            break;
-        case 12:
-            cell.primaryLabel.text = @"Et maintenant ?";
-            break;
-        default:
-            break;
-    }
+    cell.primaryLabel.text = [chapters objectAtIndex:indexPath.row];
     
     UIView *myBackView = [[UIView alloc] initWithFrame:cell.frame];
     myBackView.backgroundColor = [UIColor colorWithRed:0.0 green:0.64 blue:0.80 alpha:1];

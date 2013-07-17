@@ -10,6 +10,6 @@
 #import "MasterViewController.h"
 
 @interface RootViewController : UIViewController
-@property (nonatomic, strong) MasterViewController *masterViewController;
-@property (nonatomic, strong) UIWebView *webView;
+@property (nonatomic, strong) MasterViewController* masterViewController;
+@property (nonatomic, strong) UIWebView* webView;
 @end

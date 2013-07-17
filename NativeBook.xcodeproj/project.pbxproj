@@ -45,6 +45,7 @@
 		2010FD0B1797159D0092C107 /* UIMasterViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIMasterViewCell.h; sourceTree = "<group>"; };
 		2010FD0C1797159D0092C107 /* UIMasterViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIMasterViewCell.m; sourceTree = "<group>"; };
 		2010FD0E179746BE0092C107 /* tap@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tap@2x.png"; sourceTree = "<group>"; };
+		2010FD1017974EEF0092C107 /* Globals.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Globals.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +103,7 @@
 				2010FD0C1797159D0092C107 /* UIMasterViewCell.m */,
 				2010FD0E179746BE0092C107 /* tap@2x.png */,
 				2010FCE91797138B0092C107 /* Supporting Files */,
+				2010FD1017974EEF0092C107 /* Globals.h */,
 			);
 			path = NativeBook;
 			sourceTree = "<group>";

@@ -7,8 +7,8 @@
 //
 
 #import "AppDelegate.h"
-
 #import "RootViewController.h"
+NSArray* chapters;
 
 @implementation AppDelegate
 
@@ -21,6 +21,22 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    chapters = [NSArray arrayWithObjects:
+                     @"Introduction",
+                     @"Conseils Techniques",
+                     @"Le top à manches kimono",
+                     @"La cape cache-cœur",
+                     @"La robe « Y »",
+                     @"La jupe modulable à plis",
+                     @"Le chauffe-épaules",
+                     @"Le tablier girly",
+                     @"La ceinture obi origami",
+                     @"Le bandeau vintage",
+                     @"La broche pétales",
+                     @"Une pochette pour ma tablette",
+                     @"Et maintenant ?",
+                     nil];
+    
     self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
     // Override point for customization after application launch.
     self.rootViewController = [[[RootViewController alloc] initWithNibName:@"RootViewController" bundle:nil] autorelease];
