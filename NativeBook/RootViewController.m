@@ -8,6 +8,7 @@
 
 #import "RootViewController.h"
 #import <QuartzCore/QuartzCore.h>
+#import <Cordova/CDVViewController.h>
 int current;
 
 @interface RootViewController () <UIScrollViewDelegate>

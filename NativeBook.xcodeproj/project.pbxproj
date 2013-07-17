@@ -22,6 +22,20 @@
 		2010FD0D179715D10092C107 /* UIMasterViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2010FD0C1797159D0092C107 /* UIMasterViewCell.m */; };
 		2010FD0F179746BE0092C107 /* tap@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2010FD0E179746BE0092C107 /* tap@2x.png */; };
 		2010FD14179759B70092C107 /* active@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2010FD13179759B70092C107 /* active@2x.png */; };
+		2010FD1717975D120092C107 /* config.xml in Resources */ = {isa = PBXBuildFile; fileRef = 2010FD1617975D120092C107 /* config.xml */; };
+		2010FD2117975E520092C107 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2010FD2017975E520092C107 /* AudioToolbox.framework */; };
+		2010FD2417975E5A0092C107 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2010FD2217975E5A0092C107 /* AddressBook.framework */; };
+		2010FD2517975E5A0092C107 /* AddressBookUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2010FD2317975E5A0092C107 /* AddressBookUI.framework */; };
+		2010FD2717975E640092C107 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2010FD2617975E630092C107 /* AVFoundation.framework */; };
+		2010FD2917975E6C0092C107 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2010FD2817975E6C0092C107 /* CoreLocation.framework */; };
+		2010FD2B17975E8E0092C107 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2010FD2A17975E8E0092C107 /* MediaPlayer.framework */; };
+		2010FD2D17975E940092C107 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2010FD2C17975E940092C107 /* QuartzCore.framework */; };
+		2010FD2F17975E9D0092C107 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2010FD2E17975E9D0092C107 /* SystemConfiguration.framework */; };
+		2010FD3117975EA60092C107 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2010FD3017975EA60092C107 /* MobileCoreServices.framework */; };
+		2010FD3317975EB10092C107 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2010FD3217975EB10092C107 /* CoreMedia.framework */; };
+		2010FD3517975ED90092C107 /* libCordova.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2010FD3417975ED90092C107 /* libCordova.a */; };
+		2010FDC1179762230092C107 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2010FDC0179762230092C107 /* ImageIO.framework */; };
+		2010FDC3179762400092C107 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2010FDC2179762400092C107 /* AssetsLibrary.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +62,20 @@
 		2010FD0E179746BE0092C107 /* tap@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tap@2x.png"; sourceTree = "<group>"; };
 		2010FD1017974EEF0092C107 /* Globals.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Globals.h; sourceTree = "<group>"; };
 		2010FD13179759B70092C107 /* active@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "active@2x.png"; sourceTree = "<group>"; };
+		2010FD1617975D120092C107 /* config.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = config.xml; sourceTree = "<group>"; };
+		2010FD2017975E520092C107 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		2010FD2217975E5A0092C107 /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
+		2010FD2317975E5A0092C107 /* AddressBookUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBookUI.framework; path = System/Library/Frameworks/AddressBookUI.framework; sourceTree = SDKROOT; };
+		2010FD2617975E630092C107 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		2010FD2817975E6C0092C107 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		2010FD2A17975E8E0092C107 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		2010FD2C17975E940092C107 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		2010FD2E17975E9D0092C107 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		2010FD3017975EA60092C107 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		2010FD3217975EB10092C107 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		2010FD3417975ED90092C107 /* libCordova.a */ = {isa = PBXFileReference; lastKnownFileType = file; name = libCordova.a; path = "CordovaLib/build/Release-iphoneos/libCordova.a"; sourceTree = "<group>"; };
+		2010FDC0179762230092C107 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		2010FDC2179762400092C107 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +83,19 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2010FD3517975ED90092C107 /* libCordova.a in Frameworks */,
+				2010FDC3179762400092C107 /* AssetsLibrary.framework in Frameworks */,
+				2010FDC1179762230092C107 /* ImageIO.framework in Frameworks */,
+				2010FD3317975EB10092C107 /* CoreMedia.framework in Frameworks */,
+				2010FD3117975EA60092C107 /* MobileCoreServices.framework in Frameworks */,
+				2010FD2F17975E9D0092C107 /* SystemConfiguration.framework in Frameworks */,
+				2010FD2D17975E940092C107 /* QuartzCore.framework in Frameworks */,
+				2010FD2B17975E8E0092C107 /* MediaPlayer.framework in Frameworks */,
+				2010FD2917975E6C0092C107 /* CoreLocation.framework in Frameworks */,
+				2010FD2717975E640092C107 /* AVFoundation.framework in Frameworks */,
+				2010FD2417975E5A0092C107 /* AddressBook.framework in Frameworks */,
+				2010FD2517975E5A0092C107 /* AddressBookUI.framework in Frameworks */,
+				2010FD2117975E520092C107 /* AudioToolbox.framework in Frameworks */,
 				2010FCE31797138B0092C107 /* UIKit.framework in Frameworks */,
 				2010FCE51797138B0092C107 /* Foundation.framework in Frameworks */,
 				2010FCE71797138B0092C107 /* CoreGraphics.framework in Frameworks */,
@@ -67,6 +108,19 @@
 		2010FCD61797138B0092C107 = {
 			isa = PBXGroup;
 			children = (
+				2010FDC2179762400092C107 /* AssetsLibrary.framework */,
+				2010FDC0179762230092C107 /* ImageIO.framework */,
+				2010FD3417975ED90092C107 /* libCordova.a */,
+				2010FD3217975EB10092C107 /* CoreMedia.framework */,
+				2010FD3017975EA60092C107 /* MobileCoreServices.framework */,
+				2010FD2E17975E9D0092C107 /* SystemConfiguration.framework */,
+				2010FD2C17975E940092C107 /* QuartzCore.framework */,
+				2010FD2A17975E8E0092C107 /* MediaPlayer.framework */,
+				2010FD2817975E6C0092C107 /* CoreLocation.framework */,
+				2010FD2617975E630092C107 /* AVFoundation.framework */,
+				2010FD2217975E5A0092C107 /* AddressBook.framework */,
+				2010FD2317975E5A0092C107 /* AddressBookUI.framework */,
+				2010FD2017975E520092C107 /* AudioToolbox.framework */,
 				2010FCE81797138B0092C107 /* NativeBook */,
 				2010FCE11797138B0092C107 /* Frameworks */,
 				2010FCE01797138B0092C107 /* Products */,
@@ -106,6 +160,7 @@
 				2010FD0C1797159D0092C107 /* UIMasterViewCell.m */,
 				2010FD0E179746BE0092C107 /* tap@2x.png */,
 				2010FD13179759B70092C107 /* active@2x.png */,
+				2010FD1617975D120092C107 /* config.xml */,
 				2010FCE91797138B0092C107 /* Supporting Files */,
 			);
 			path = NativeBook;
@@ -183,6 +238,7 @@
 				2010FCFF1797138B0092C107 /* RootViewController.xib in Resources */,
 				2010FD0F179746BE0092C107 /* tap@2x.png in Resources */,
 				2010FD14179759B70092C107 /* active@2x.png in Resources */,
+				2010FD1717975D120092C107 /* config.xml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,7 +340,16 @@
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "NativeBook/NativeBook-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"“$(BUILT_PRODUCTS_DIR)”",
+					"“$(OBJROOT)/UninstalledProducts/include”",
+					"“$(TARGET_BUILD_DIR)/usr/local/lib/include”",
+				);
 				INFOPLIST_FILE = "NativeBook/NativeBook-Info.plist";
+				OTHER_LDFLAGS = (
+					"-Obj-C",
+					"-all_load",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -295,7 +360,16 @@
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "NativeBook/NativeBook-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"“$(BUILT_PRODUCTS_DIR)”",
+					"“$(OBJROOT)/UninstalledProducts/include”",
+					"“$(TARGET_BUILD_DIR)/usr/local/lib/include”",
+				);
 				INFOPLIST_FILE = "NativeBook/NativeBook-Info.plist";
+				OTHER_LDFLAGS = (
+					"-Obj-C",
+					"-all_load",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
