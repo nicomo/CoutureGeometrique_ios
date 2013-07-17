@@ -31,7 +31,7 @@ NSArray* chapters;
 {
     [super viewDidLoad];
 
-    self.tableView.frame = CGRectMake(0, 0, 256, 1024);
+    self.tableView.frame = CGRectMake(0, 0, 256, 1004);
     self.tableView.autoresizingMask = UIViewAutoresizingFlexibleHeight;
     
     self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;

@@ -10,6 +10,7 @@
 #import "RootViewController.h"
 NSArray* chapters;
 NSArray* colors;
+int current;
 
 @implementation AppDelegate
 
@@ -54,6 +55,8 @@ NSArray* colors;
               [UIColor colorWithRed:.93 green:.77 blue:.12 alpha:1],
               [UIColor colorWithRed:.09 green:.72 blue:.65 alpha:1],
               nil];
+    
+    current = 0;
     
     self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
     // Override point for customization after application launch.

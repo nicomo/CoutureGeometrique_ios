@@ -8,6 +8,7 @@
 
 #import "RootViewController.h"
 #import <QuartzCore/QuartzCore.h>
+int current;
 
 @interface RootViewController () <UIScrollViewDelegate>
 @property (nonatomic, strong) UIView* pullviewtop;
@@ -28,8 +29,9 @@
     [self.view addSubview:self.masterViewController.tableView];
     [self.masterViewController didMoveToParentViewController:self];
 
-    self.webView = [[UIWebView alloc] initWithFrame:CGRectMake(256, 0, 768, 748)];
+    self.webView = [[UIWebView alloc] initWithFrame:CGRectMake(256, 0, 768, 1004)];
     self.webView.backgroundColor = [UIColor clearColor];
+    self.webView.autoresizingMask = UIViewAutoresizingFlexibleHeight;
 
     for (UIView *view in [[[self.webView subviews] objectAtIndex:0] subviews]) {
         if ([view isKindOfClass:[UIImageView class]]) {
@@ -55,7 +57,7 @@
     chapternumber.backgroundColor = [UIColor clearColor];
     [self.pullviewtop addSubview:chapternumber];
     UILabel* chaptername = [[UILabel alloc] initWithFrame:CGRectMake(296, 40, 200, 20)];
-    chaptername.text = @"Le top à manches kimono";
+    chaptername.text = [chapters objectAtIndex:current];
     chaptername.textColor = [UIColor whiteColor];
     chaptername.font = [UIFont systemFontOfSize:14];
     chaptername.backgroundColor = [UIColor clearColor];
@@ -66,6 +68,7 @@
     self.dragging = NO;
     
     self.view.backgroundColor = [UIColor colorWithRed:.44 green:.46 blue:.49 alpha:1];
+    self.view.autoresizesSubviews = YES;
 }
 
 - (void)didReceiveMemoryWarning
