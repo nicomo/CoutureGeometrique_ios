@@ -16,8 +16,11 @@
 		2010FCF51797138B0092C107 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 2010FCF41797138B0092C107 /* Default.png */; };
 		2010FCF71797138B0092C107 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2010FCF61797138B0092C107 /* Default@2x.png */; };
 		2010FCF91797138B0092C107 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2010FCF81797138B0092C107 /* Default-568h@2x.png */; };
-		2010FCFC1797138B0092C107 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2010FCFB1797138B0092C107 /* ViewController.m */; };
-		2010FCFF1797138B0092C107 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2010FCFD1797138B0092C107 /* ViewController.xib */; };
+		2010FCFF1797138B0092C107 /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2010FCFD1797138B0092C107 /* RootViewController.xib */; };
+		2010FD091797156B0092C107 /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2010FD061797141A0092C107 /* MasterViewController.m */; };
+		2010FD0A1797156B0092C107 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2010FD081797141A0092C107 /* RootViewController.m */; };
+		2010FD0D179715D10092C107 /* UIMasterViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2010FD0C1797159D0092C107 /* UIMasterViewCell.m */; };
+		2010FD0F179746BE0092C107 /* tap@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2010FD0E179746BE0092C107 /* tap@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,9 +37,14 @@
 		2010FCF41797138B0092C107 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		2010FCF61797138B0092C107 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		2010FCF81797138B0092C107 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		2010FCFA1797138B0092C107 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		2010FCFB1797138B0092C107 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		2010FCFE1797138B0092C107 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		2010FCFE1797138B0092C107 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/RootViewController.xib; sourceTree = "<group>"; };
+		2010FD051797141A0092C107 /* MasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
+		2010FD061797141A0092C107 /* MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
+		2010FD071797141A0092C107 /* RootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		2010FD081797141A0092C107 /* RootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		2010FD0B1797159D0092C107 /* UIMasterViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIMasterViewCell.h; sourceTree = "<group>"; };
+		2010FD0C1797159D0092C107 /* UIMasterViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIMasterViewCell.m; sourceTree = "<group>"; };
+		2010FD0E179746BE0092C107 /* tap@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tap@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,9 +93,14 @@
 			children = (
 				2010FCF11797138B0092C107 /* AppDelegate.h */,
 				2010FCF21797138B0092C107 /* AppDelegate.m */,
-				2010FCFA1797138B0092C107 /* ViewController.h */,
-				2010FCFB1797138B0092C107 /* ViewController.m */,
-				2010FCFD1797138B0092C107 /* ViewController.xib */,
+				2010FCFD1797138B0092C107 /* RootViewController.xib */,
+				2010FD051797141A0092C107 /* MasterViewController.h */,
+				2010FD061797141A0092C107 /* MasterViewController.m */,
+				2010FD071797141A0092C107 /* RootViewController.h */,
+				2010FD081797141A0092C107 /* RootViewController.m */,
+				2010FD0B1797159D0092C107 /* UIMasterViewCell.h */,
+				2010FD0C1797159D0092C107 /* UIMasterViewCell.m */,
+				2010FD0E179746BE0092C107 /* tap@2x.png */,
 				2010FCE91797138B0092C107 /* Supporting Files */,
 			);
 			path = NativeBook;
@@ -162,7 +175,8 @@
 				2010FCF51797138B0092C107 /* Default.png in Resources */,
 				2010FCF71797138B0092C107 /* Default@2x.png in Resources */,
 				2010FCF91797138B0092C107 /* Default-568h@2x.png in Resources */,
-				2010FCFF1797138B0092C107 /* ViewController.xib in Resources */,
+				2010FCFF1797138B0092C107 /* RootViewController.xib in Resources */,
+				2010FD0F179746BE0092C107 /* tap@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -173,9 +187,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2010FD0D179715D10092C107 /* UIMasterViewCell.m in Sources */,
+				2010FD091797156B0092C107 /* MasterViewController.m in Sources */,
+				2010FD0A1797156B0092C107 /* RootViewController.m in Sources */,
 				2010FCEF1797138B0092C107 /* main.m in Sources */,
 				2010FCF31797138B0092C107 /* AppDelegate.m in Sources */,
-				2010FCFC1797138B0092C107 /* ViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -190,12 +206,12 @@
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		2010FCFD1797138B0092C107 /* ViewController.xib */ = {
+		2010FCFD1797138B0092C107 /* RootViewController.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
 				2010FCFE1797138B0092C107 /* en */,
 			);
-			name = ViewController.xib;
+			name = RootViewController.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
