@@ -92,20 +92,7 @@ NSArray* chapters;
 }
 
 - (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath {
-    if (indexPath.row ==  0) { [cell setBackgroundColor:[UIColor colorWithRed:.80 green:.00 blue:.47 alpha:1]]; }
-    if (indexPath.row ==  1) { [cell setBackgroundColor:[UIColor colorWithRed:.00 green:.61 blue:.59 alpha:1]]; }
-    if (indexPath.row ==  2) { [cell setBackgroundColor:[UIColor colorWithRed:.42 green:.39 blue:.25 alpha:1]]; }
-    if (indexPath.row ==  3) { [cell setBackgroundColor:[UIColor colorWithRed:.83 green:.73 blue:.08 alpha:1]]; }
-    if (indexPath.row ==  4) { [cell setBackgroundColor:[UIColor colorWithRed:.97 green:.11 blue:.37 alpha:1]]; }
-    if (indexPath.row ==  5) { [cell setBackgroundColor:[UIColor colorWithRed:.44 green:.46 blue:.49 alpha:1]]; }
-    if (indexPath.row ==  6) { [cell setBackgroundColor:[UIColor colorWithRed:.56 green:.79 blue:.93 alpha:1]]; }
-    if (indexPath.row ==  7) { [cell setBackgroundColor:[UIColor colorWithRed:.21 green:.23 blue:.23 alpha:1]]; }
-    if (indexPath.row ==  8) { [cell setBackgroundColor:[UIColor colorWithRed:.32 green:.51 blue:.62 alpha:1]]; }
-    if (indexPath.row ==  9) { [cell setBackgroundColor:[UIColor colorWithRed:.94 green:.66 blue:.67 alpha:1]]; }
-    if (indexPath.row == 10) { [cell setBackgroundColor:[UIColor colorWithRed:.73 green:.72 blue:.37 alpha:1]]; }
-    if (indexPath.row == 11) { [cell setBackgroundColor:[UIColor colorWithRed:.93 green:.47 blue:.40 alpha:1]]; }
-    if (indexPath.row == 12) { [cell setBackgroundColor:[UIColor colorWithRed:.93 green:.77 blue:.12 alpha:1]]; }
-    if (indexPath.row == 13) { [cell setBackgroundColor:[UIColor colorWithRed:.09 green:.72 blue:.65 alpha:1]]; }
+    [cell setBackgroundColor:[colors objectAtIndex:indexPath.row]];
 }
 
 @end

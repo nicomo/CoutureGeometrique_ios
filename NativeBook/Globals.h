@@ -10,5 +10,6 @@
 #define NativeBook_Globals_h
 
 extern NSArray* chapters;
+extern NSArray* colors;
 
 #endif
