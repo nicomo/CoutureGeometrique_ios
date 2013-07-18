@@ -12,7 +12,9 @@ int current;
 
 @interface RootViewController () <UIScrollViewDelegate>
 @property (nonatomic, strong) UIView* pullviewtop;
-@property (nonatomic) BOOL triggered;
+@property (nonatomic, strong) UIView* pullviewbottom;
+@property (nonatomic) BOOL triggeredtop;
+@property (nonatomic) BOOL triggeredbottom;
 @property (nonatomic) BOOL dragging;
 @end
 
@@ -30,10 +32,12 @@ int current;
     [self.masterViewController didMoveToParentViewController:self];
 
     self.cdvViewController = [CDVViewController new];
-    self.cdvViewController.view.frame = CGRectMake(256, 0, 768, 1024);
-    self.cdvViewController.webView.frame = CGRectMake(0, 0, 768, 1024);
+    self.cdvViewController.view.frame = CGRectMake(256, 0, 768, 1004);
+    //self.cdvViewController.webView.frame = CGRectMake(0, 0, 768, 1024);
     self.cdvViewController.view.backgroundColor = [UIColor clearColor];
+    //self.cdvViewController.view.autoresizesSubviews = YES;
     self.cdvViewController.view.autoresizingMask = UIViewAutoresizingFlexibleHeight;
+    self.cdvViewController.webView.autoresizingMask = UIViewAutoresizingFlexibleHeight;
     for (UIView *view in [[[self.cdvViewController.webView subviews] objectAtIndex:0] subviews]) {
         if ([view isKindOfClass:[UIImageView class]]) {
             view.hidden = YES;
@@ -45,24 +49,47 @@ int current;
     // Top pull view
     self.pullviewtop = [[UIView alloc] initWithFrame:CGRectMake(0, -80, 768, 80)];
     self.pullviewtop.backgroundColor = [UIColor colorWithRed:0 green:0 blue:0 alpha:0.75];
-    UIImageView* tapimgview = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"tap.png"]];
-    tapimgview.frame = CGRectMake(236, 20, 40, 40);
-    [self.pullviewtop addSubview:tapimgview];
-    UILabel* chapternumber = [[UILabel alloc] initWithFrame:CGRectMake(296, 20, 200, 20)];
-    chapternumber.text = @"Passer au chapitre précédant";
-    chapternumber.textColor = [UIColor grayColor];
-    chapternumber.font = [UIFont boldSystemFontOfSize:14];
-    chapternumber.backgroundColor = [UIColor clearColor];
-    [self.pullviewtop addSubview:chapternumber];
-    UILabel* chaptername = [[UILabel alloc] initWithFrame:CGRectMake(296, 40, 200, 20)];
-    chaptername.text = [chapters objectAtIndex:current];
-    chaptername.textColor = [UIColor whiteColor];
-    chaptername.font = [UIFont systemFontOfSize:14];
-    chaptername.backgroundColor = [UIColor clearColor];
-    [self.pullviewtop addSubview:chaptername];
+    UIImageView* tapimgviewtop = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"tap.png"]];
+    tapimgviewtop.frame = CGRectMake(236, 20, 40, 40);
+    [self.pullviewtop addSubview:tapimgviewtop];
+    UILabel* chapternumbertop = [[UILabel alloc] initWithFrame:CGRectMake(296, 20, 200, 20)];
+    chapternumbertop.text = @"Passer au chapitre précédant";
+    chapternumbertop.textColor = [UIColor grayColor];
+    chapternumbertop.font = [UIFont boldSystemFontOfSize:14];
+    chapternumbertop.backgroundColor = [UIColor clearColor];
+    [self.pullviewtop addSubview:chapternumbertop];
+    UILabel* chapternametop = [[UILabel alloc] initWithFrame:CGRectMake(296, 40, 200, 20)];
+    if (current > 0) chapternametop.text = [chapters objectAtIndex:current-1];
+    chapternametop.textColor = [UIColor whiteColor];
+    chapternametop.font = [UIFont systemFontOfSize:14];
+    chapternametop.backgroundColor = [UIColor clearColor];
+    [self.pullviewtop addSubview:chapternametop];
     [self.cdvViewController.webView addSubview:self.pullviewtop];
+    
+    // Bottom pull view
+    NSLog(@"%f",self.cdvViewController.webView.scrollView.contentSize.height);
+    self.pullviewbottom = [[UIView alloc] initWithFrame:CGRectMake(0, self.cdvViewController.webView.scrollView.contentSize.height, 768, 80)];
+    self.pullviewbottom.autoresizingMask = UIViewAutoresizingFlexibleTopMargin;
+    self.pullviewbottom.backgroundColor = [UIColor colorWithRed:0 green:0 blue:0 alpha:0.75];
+    UIImageView* tapimgviewbottom = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"tap.png"]];
+    tapimgviewbottom.frame = CGRectMake(236, 20, 40, 40);
+    [self.pullviewbottom addSubview:tapimgviewbottom];
+    UILabel* chapternumberbottom = [[UILabel alloc] initWithFrame:CGRectMake(296, 20, 200, 20)];
+    chapternumberbottom.text = @"Passer au chapitre précédant";
+    chapternumberbottom.textColor = [UIColor grayColor];
+    chapternumberbottom.font = [UIFont boldSystemFontOfSize:14];
+    chapternumberbottom.backgroundColor = [UIColor clearColor];
+    [self.pullviewbottom addSubview:chapternumberbottom];
+    UILabel* chapternamebottom = [[UILabel alloc] initWithFrame:CGRectMake(296, 40, 200, 20)];
+    if (current <= 13) chapternamebottom.text = [chapters objectAtIndex:current+1];
+    chapternamebottom.textColor = [UIColor whiteColor];
+    chapternamebottom.font = [UIFont systemFontOfSize:14];
+    chapternamebottom.backgroundColor = [UIColor clearColor];
+    [self.pullviewbottom addSubview:chapternamebottom];
+    [self.cdvViewController.webView addSubview:self.pullviewbottom];
 
-    self.triggered = NO;
+    self.triggeredtop = NO;
+    self.triggeredbottom = NO;
     self.dragging = NO;
     
     self.view.backgroundColor = [UIColor colorWithRed:.44 green:.46 blue:.49 alpha:1];
@@ -80,24 +107,47 @@ int current;
 }
 
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView {
-    if (self.triggered && scrollView.contentOffset.y >= -80 && !self.dragging) {
-        scrollView.contentOffset = CGPointMake(0, -80);
+    if (current > 0) {
+        if (self.triggeredtop && scrollView.contentOffset.y >= -80 && !self.dragging) {
+            scrollView.contentOffset = CGPointMake(0, -80);
+        }
+        if (scrollView.contentOffset.y < -80 && self.dragging) {
+            self.triggeredtop = YES;
+            [UIView animateWithDuration:0.15 animations:^{
+                CGRect fr = self.pullviewtop.frame;
+                fr.origin.y = 0;
+                self.pullviewtop.frame = fr;
+            }];
+        }
+        if (scrollView.contentOffset.y > -80 && scrollView.contentOffset.y < 0 && self.triggeredtop) {
+            self.triggeredtop = NO;
+            [UIView animateWithDuration:0.15 animations:^{
+                CGRect fr = self.pullviewtop.frame;
+                fr.origin.y = -80;
+                self.pullviewtop.frame = fr;
+            }];
+        }
     }
-    if (scrollView.contentOffset.y < -80 && self.dragging) {
-        self.triggered = YES;
-        [UIView animateWithDuration:0.15 animations:^{
-            CGRect fr = self.pullviewtop.frame;
-            fr.origin.y = 0;
-            self.pullviewtop.frame = fr;
-        }];
-    }
-    if (scrollView.contentOffset.y > -80 && scrollView.contentOffset.y < 0 && self.triggered) {
-        self.triggered = NO;
-        [UIView animateWithDuration:0.15 animations:^{
-            CGRect fr = self.pullviewtop.frame;
-            fr.origin.y = -80;
-            self.pullviewtop.frame = fr;
-        }];
+    if (current <= 13) {
+        if (self.triggeredbottom && scrollView.contentOffset.y + 1004 <= scrollView.contentSize.height + 80 && !self.dragging) {
+            scrollView.contentOffset = CGPointMake(0, scrollView.contentSize.height - 1004 + 80);
+        }
+        if (scrollView.contentOffset.y + 1004 > scrollView.contentSize.height + 80 && self.dragging) {
+            self.triggeredbottom = YES;
+            [UIView animateWithDuration:0.15 animations:^{
+                CGRect fr = self.pullviewbottom.frame;
+                fr.origin.y = scrollView.contentSize.height - 1024 + 81;
+                self.pullviewbottom.frame = fr;
+            }];
+        }
+        if (scrollView.contentOffset.y + 1004 < scrollView.contentSize.height + 80 && scrollView.contentOffset.y + 1024 > scrollView.contentSize.height && self.triggeredbottom) {
+            self.triggeredbottom = NO;
+            [UIView animateWithDuration:0.15 animations:^{
+                CGRect fr = self.pullviewbottom.frame;
+                fr.origin.y = scrollView.contentSize.height - 1024 + 160;
+                self.pullviewbottom.frame = fr;
+            }];
+        }
     }
 }
 

@@ -56,7 +56,7 @@ int current;
               [UIColor colorWithRed:.09 green:.72 blue:.65 alpha:1],
               nil];
     
-    current = 0;
+    current = 1;
     
     self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
     // Override point for customization after application launch.
