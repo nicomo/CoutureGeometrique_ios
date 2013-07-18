@@ -22,11 +22,6 @@ int current;
 {
     [super viewDidLoad];
 
-    self.masterViewController = [[MasterViewController alloc] init];
-    [self addChildViewController:self.masterViewController];
-    [self.view addSubview:self.masterViewController.tableView];
-    [self.masterViewController didMoveToParentViewController:self];
-
     self.cdvViewController = [CDVViewController new];
     self.cdvViewController.view.frame = CGRectMake(0, 0, 768, 1004);
     self.cdvViewController.view.backgroundColor = [UIColor clearColor];
@@ -39,6 +34,11 @@ int current;
     }
     self.cdvViewController.webView.scrollView.delegate = self;
     [self.view addSubview:self.cdvViewController.view];
+    
+    self.masterViewController = [[MasterViewController alloc] init];
+    [self addChildViewController:self.masterViewController];
+    [self.view addSubview:self.masterViewController.tableView];
+    [self.masterViewController didMoveToParentViewController:self];
     
     // Top pull view
     self.pullviewtop = [[UIView alloc] initWithFrame:CGRectMake(0, -80, 768, 80)];
