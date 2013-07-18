@@ -39,6 +39,16 @@
 		2010FDC5179763A10092C107 /* www in Resources */ = {isa = PBXBuildFile; fileRef = 2010FDC4179763A10092C107 /* www */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		205B84FA1798038500CC10E2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 205B84F61798038500CC10E2 /* CordovaLib.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 68A32D7114102E1C006B237C;
+			remoteInfo = CordovaLib;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		2010FCDF1797138B0092C107 /* NativeBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NativeBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2010FCE21797138B0092C107 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -74,10 +84,11 @@
 		2010FD2E17975E9D0092C107 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		2010FD3017975EA60092C107 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		2010FD3217975EB10092C107 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
-		2010FD3417975ED90092C107 /* libCordova.a */ = {isa = PBXFileReference; lastKnownFileType = file; name = libCordova.a; path = "CordovaLib/build/Release-iphoneos/libCordova.a"; sourceTree = "<group>"; };
+		2010FD3417975ED90092C107 /* libCordova.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libCordova.a; path = "CordovaLib/build/Release-iphoneos/libCordova.a"; sourceTree = "<group>"; };
 		2010FDC0179762230092C107 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
 		2010FDC2179762400092C107 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
 		2010FDC4179763A10092C107 /* www */ = {isa = PBXFileReference; lastKnownFileType = folder; path = www; sourceTree = "<group>"; };
+		205B84F61798038500CC10E2 /* CordovaLib.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CordovaLib.xcodeproj; path = CordovaLib/CordovaLib.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +121,7 @@
 		2010FCD61797138B0092C107 = {
 			isa = PBXGroup;
 			children = (
+				205B84F61798038500CC10E2 /* CordovaLib.xcodeproj */,
 				2010FDC4179763A10092C107 /* www */,
 				2010FD3417975ED90092C107 /* libCordova.a */,
 				2010FDC2179762400092C107 /* AssetsLibrary.framework */,
@@ -183,6 +195,14 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		205B84F71798038500CC10E2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				205B84FB1798038500CC10E2 /* libCordova.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -222,12 +242,28 @@
 			mainGroup = 2010FCD61797138B0092C107;
 			productRefGroup = 2010FCE01797138B0092C107 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 205B84F71798038500CC10E2 /* Products */;
+					ProjectRef = 205B84F61798038500CC10E2 /* CordovaLib.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				2010FCDE1797138B0092C107 /* NativeBook */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		205B84FB1798038500CC10E2 /* libCordova.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libCordova.a;
+			remoteRef = 205B84FA1798038500CC10E2 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		2010FCDD1797138B0092C107 /* Resources */ = {
@@ -398,6 +434,7 @@
 				2010FD041797138B0092C107 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
