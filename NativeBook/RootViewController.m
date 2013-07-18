@@ -68,7 +68,7 @@ int current;
     
     // Bottom pull view
     NSLog(@"%f",self.cdvViewController.webView.scrollView.contentSize.height);
-    self.pullviewbottom = [[UIView alloc] initWithFrame:CGRectMake(0, self.cdvViewController.webView.scrollView.contentSize.height, 768, 80)];
+    self.pullviewbottom = [[UIView alloc] initWithFrame:CGRectMake(0, self.cdvViewController.webView.scrollView.frame.size.height, 768, 80)];
     self.pullviewbottom.autoresizingMask = UIViewAutoresizingFlexibleTopMargin;
     self.pullviewbottom.backgroundColor = [UIColor colorWithRed:0 green:0 blue:0 alpha:0.75];
     UIImageView* tapimgviewbottom = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"tap.png"]];
@@ -129,22 +129,23 @@ int current;
         }
     }
     if (current <= 13) {
-        if (self.triggeredbottom && scrollView.contentOffset.y + 1004 <= scrollView.contentSize.height + 80 && !self.dragging) {
-            scrollView.contentOffset = CGPointMake(0, scrollView.contentSize.height - 1004 + 80);
+        float frh = scrollView.frame.size.height;
+        if (self.triggeredbottom && scrollView.contentOffset.y + frh <= scrollView.contentSize.height + 80 && !self.dragging) {
+            scrollView.contentOffset = CGPointMake(0, scrollView.contentSize.height - frh + 80);
         }
-        if (scrollView.contentOffset.y + 1004 > scrollView.contentSize.height + 80 && self.dragging) {
+        if (scrollView.contentOffset.y + frh > scrollView.contentSize.height + 80 && self.dragging) {
             self.triggeredbottom = YES;
             [UIView animateWithDuration:0.15 animations:^{
                 CGRect fr = self.pullviewbottom.frame;
-                fr.origin.y = scrollView.contentSize.height - 1024 + 81;
+                fr.origin.y = frh - 80;
                 self.pullviewbottom.frame = fr;
             }];
         }
-        if (scrollView.contentOffset.y + 1004 < scrollView.contentSize.height + 80 && scrollView.contentOffset.y + 1024 > scrollView.contentSize.height && self.triggeredbottom) {
+        if (scrollView.contentOffset.y + frh < scrollView.contentSize.height + 80 && scrollView.contentOffset.y + 1024 > scrollView.contentSize.height && self.triggeredbottom) {
             self.triggeredbottom = NO;
             [UIView animateWithDuration:0.15 animations:^{
                 CGRect fr = self.pullviewbottom.frame;
-                fr.origin.y = scrollView.contentSize.height - 1024 + 160;
+                fr.origin.y = frh;
                 self.pullviewbottom.frame = fr;
             }];
         }
