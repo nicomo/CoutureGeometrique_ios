@@ -67,7 +67,7 @@ NSArray* chapters;
         cell = [[[UIMasterViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:MasterCellIdentifier] autorelease];
     }
 
-    cell.primaryLabel.text = [chapters objectAtIndex:indexPath.row];
+    cell.primaryLabel.text = [chapters.retain objectAtIndex:indexPath.row];
 
     UIImageView* activeimgview = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"active.png"]];
     activeimgview.frame = CGRectMake(216, 0, 40, 40);
@@ -92,7 +92,7 @@ NSArray* chapters;
 }
 
 - (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath {
-    [cell setBackgroundColor:[colors objectAtIndex:indexPath.row]];
+    [cell setBackgroundColor:[colors.retain objectAtIndex:indexPath.row]];
 }
 
 @end
