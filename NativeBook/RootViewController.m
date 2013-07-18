@@ -30,18 +30,17 @@ int current;
     [self.masterViewController didMoveToParentViewController:self];
 
     self.cdvViewController = [CDVViewController new];
-    self.cdvViewController.view.frame = CGRectMake(256, 0, 768, 1004);
-    self.cdvViewController.webView.frame = CGRectMake(256, 0, 768, 1004);
-    self.cdvViewController.webView.backgroundColor = [UIColor clearColor];
-    self.cdvViewController.webView.autoresizingMask = UIViewAutoresizingFlexibleHeight;
-    self.cdvViewController.startPage = @"native.html";
+    self.cdvViewController.view.frame = CGRectMake(256, 0, 768, 1024);
+    self.cdvViewController.webView.frame = CGRectMake(0, 0, 768, 1024);
+    self.cdvViewController.view.backgroundColor = [UIColor clearColor];
+    self.cdvViewController.view.autoresizingMask = UIViewAutoresizingFlexibleHeight;
     for (UIView *view in [[[self.cdvViewController.webView subviews] objectAtIndex:0] subviews]) {
         if ([view isKindOfClass:[UIImageView class]]) {
             view.hidden = YES;
         }
     }
-    [self.view addSubview:self.cdvViewController.webView];
     self.cdvViewController.webView.scrollView.delegate = self;
+    [self.view addSubview:self.cdvViewController.view];
     
     // Top pull view
     self.pullviewtop = [[UIView alloc] initWithFrame:CGRectMake(0, -80, 768, 80)];

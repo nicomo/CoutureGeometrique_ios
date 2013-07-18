@@ -49,7 +49,7 @@
     <preference name="KeyboardShrinksView" value="false" />
     <preference name="MediaPlaybackRequiresUserAction" value="false" />
     <preference name="ShowSplashScreenSpinner" value="true" />
-    <preference name="SuppressesIncrementalRendering" value="false" />
+    <preference name="SuppressesIncrementalRendering" value="true" />
     <preference name="TopActivityIndicator" value="gray" />
 
 
@@ -92,9 +92,9 @@
     <feature name="Battery">
       <param name="ios-package" value="CDVBattery"/>
     </feature>
-    <feature name="SplashScreen">
+    <!--<feature name="SplashScreen">
       <param name="ios-package" value="CDVSplashScreen"/>
-    </feature>
+    </feature>-->
     <feature name="Echo">
       <param name="ios-package" value="CDVEcho"/>
     </feature>

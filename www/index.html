@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>Carole Phangia-Choquenet. Couture géométrique.</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="framework/css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <!--<link href="framework/css/bootstrap.min.css" rel="stylesheet" media="screen">-->
     <link href="framework/css/font-awesome.min.css" rel="stylesheet">
     <link href="framework/css/framework.css" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
@@ -36,8 +36,8 @@
         });
       }
 
-      $('<section>').load('2.html', function() {
-        $('.wrap').append('<section id="chapter2">'+$(this).html()+'</section>');
+      $('<section>').load('1.html', function() {
+        $('.wrap').append('<section id="chapter1">'+$(this).html()+'</section>');
         $(".slideshow").slideshow();
         popify();
       });
@@ -46,10 +46,7 @@
       html, body, .container, .row-fluid, #page {
         width: 768px !important;
         height: auto !important;
-      }
-      .row-fluid {
-        position: static;
-        -webkit-transform: translate3d(0px,0px,0px);
+        margin: 0 !important;
       }
     </style>
   </head>
