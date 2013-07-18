@@ -28,10 +28,10 @@ int current;
     [self.masterViewController didMoveToParentViewController:self];
 
     self.cdvViewController = [CDVViewController new];
-    self.cdvViewController.view.frame = CGRectMake(256, 0, 768, 1004);
+    self.cdvViewController.view.frame = CGRectMake(0, 0, 768, 1004);
     self.cdvViewController.view.backgroundColor = [UIColor clearColor];
     self.cdvViewController.webView.backgroundColor = [UIColor clearColor];
-    self.cdvViewController.webView.autoresizingMask = UIViewAutoresizingFlexibleHeight;
+    self.cdvViewController.webView.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleLeftMargin;
     for (UIView *view in [[[self.cdvViewController.webView subviews] objectAtIndex:0] subviews]) {
         if ([view isKindOfClass:[UIImageView class]]) {
             view.hidden = YES;
