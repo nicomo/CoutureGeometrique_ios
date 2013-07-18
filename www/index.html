@@ -17,14 +17,14 @@
     <script src="framework/js/jquery.slideshow.js"></script>
     <script type="text/javascript">
       function loadpage(i) {
-        $('section').remove();
         $('<section>').load(i+'.html', function() {
           var html = $(this).html();
+          $('section').remove();
           $('.wrap').append('<section id="chapter'+i+'">'+html+'</section>');
           popify();
           //pinify();
           $(".slideshow").slideshow();
-          $('.scrollable').scrollTop(0);
+          $('body').scrollTop(0);
         });
       }
 
