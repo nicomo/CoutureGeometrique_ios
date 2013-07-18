@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="framework/css/bootstrap.min.css" rel="stylesheet" media="screen">
     <link href="framework/css/font-awesome.min.css" rel="stylesheet">
-    <link href="framework/css/pull-to-refresh.css" rel="stylesheet">
     <link href="framework/css/framework.css" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
     <script src="framework/js/cordova-2.7.0.js"></script>
@@ -15,36 +14,25 @@
     <script src="framework/js/bootstrap.min.js"></script>
     <script src="framework/js/jquery.transit.min.js"></script>
     <script src="framework/js/jquery.touchSwipe.min.js"></script>
-    <script src="framework/js/jquery.pager.js"></script>
     <script src="framework/js/jquery.slideshow.js"></script>
-    <script src="framework/js/framework.js"></script>
+    <script type="text/javascript">
+      $('<section>').load('0.html', function() {
+        $('.wrap').append('<section id="chapter0">'+$(this).html()+'</section>');
+      });
+    </script>
+    <style type="text/css">
+      html, body, .container, .row-fluid, #page {
+        width: 768px !important;
+      }
+      .row-fluid {
+        position: static;
+        -webkit-transform: translate3d(0px,0px,0px);
+      }
+    </style>
   </head>
   <body>
-    <div id="burger"></div>
     <div class="container">
       <div class="row-fluid">
-        <nav class="span3">
-            <ul>
-              <li>
-                <a href="#">Couture géométrique</a>
-                <ul>
-                  <li><a href="#">INTRODUCTION</a></li>
-                  <li><a href="#">CONSEILS TECHNIQUES</a></li>
-                  <li><a href="#">LE TOP À MANCHES KIMONO</a></li>
-                  <li><a href="#">LA CAPE CACHE-CŒUR</a></li>
-                  <li><a href="#">LA ROBE «&nbsp;Y&nbsp;»</a></li>
-                  <li><a href="#">LA JUPE MODULABLE À PLIS</a></li>
-                  <li><a href="#">LE CHAUFFE-ÉPAULES</a></li>
-                  <li><a href="#">LE TABLIER GIRLY</a></li>
-                  <li><a href="#">LA CEINTURE OBI ORIGAMI</a></li>
-                  <li><a href="#">LE BANDEAU VINTAGE</a></li>
-                  <li><a href="#">LA BROCHE PETALES</a></li>
-                  <li><a href="#">UNE POCHETTE POUR TABLETTE</a></li>
-                  <li><a href="#">ET MAINTENANT ?</a></li>
-                </ul>
-              </li>
-            </ul>
-        </nav>
         <div class="span9 scrollable" id="page">
             <div class="wrap"><div>
         </div><!-- end page -->
