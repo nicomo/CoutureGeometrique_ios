@@ -8,8 +8,9 @@
 
 #import <UIKit/UIKit.h>
 #import "MasterViewController.h"
+#import <Cordova/CDVViewController.h>
 
 @interface RootViewController : UIViewController
 @property (nonatomic, strong) MasterViewController* masterViewController;
-@property (nonatomic, strong) UIWebView* webView;
+@property (nonatomic, strong) CDVViewController* cdvViewController;
 @end

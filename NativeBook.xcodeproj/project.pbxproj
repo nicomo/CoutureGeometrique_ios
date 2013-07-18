@@ -36,6 +36,7 @@
 		2010FD3517975ED90092C107 /* libCordova.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2010FD3417975ED90092C107 /* libCordova.a */; };
 		2010FDC1179762230092C107 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2010FDC0179762230092C107 /* ImageIO.framework */; };
 		2010FDC3179762400092C107 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2010FDC2179762400092C107 /* AssetsLibrary.framework */; };
+		2010FDC5179763A10092C107 /* www in Resources */ = {isa = PBXBuildFile; fileRef = 2010FDC4179763A10092C107 /* www */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -76,6 +77,7 @@
 		2010FD3417975ED90092C107 /* libCordova.a */ = {isa = PBXFileReference; lastKnownFileType = file; name = libCordova.a; path = "CordovaLib/build/Release-iphoneos/libCordova.a"; sourceTree = "<group>"; };
 		2010FDC0179762230092C107 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
 		2010FDC2179762400092C107 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		2010FDC4179763A10092C107 /* www */ = {isa = PBXFileReference; lastKnownFileType = folder; path = www; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,9 +110,10 @@
 		2010FCD61797138B0092C107 = {
 			isa = PBXGroup;
 			children = (
+				2010FDC4179763A10092C107 /* www */,
+				2010FD3417975ED90092C107 /* libCordova.a */,
 				2010FDC2179762400092C107 /* AssetsLibrary.framework */,
 				2010FDC0179762230092C107 /* ImageIO.framework */,
-				2010FD3417975ED90092C107 /* libCordova.a */,
 				2010FD3217975EB10092C107 /* CoreMedia.framework */,
 				2010FD3017975EA60092C107 /* MobileCoreServices.framework */,
 				2010FD2E17975E9D0092C107 /* SystemConfiguration.framework */,
@@ -239,6 +242,7 @@
 				2010FD0F179746BE0092C107 /* tap@2x.png in Resources */,
 				2010FD14179759B70092C107 /* active@2x.png in Resources */,
 				2010FD1717975D120092C107 /* config.xml in Resources */,
+				2010FDC5179763A10092C107 /* www in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

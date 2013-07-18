@@ -8,7 +8,6 @@
 
 #import "RootViewController.h"
 #import <QuartzCore/QuartzCore.h>
-#import <Cordova/CDVViewController.h>
 int current;
 
 @interface RootViewController () <UIScrollViewDelegate>
@@ -19,7 +18,7 @@ int current;
 
 @implementation RootViewController
 
-@synthesize masterViewController, webView;
+@synthesize masterViewController, cdvViewController;
 
 - (void)viewDidLoad
 {
@@ -30,20 +29,19 @@ int current;
     [self.view addSubview:self.masterViewController.tableView];
     [self.masterViewController didMoveToParentViewController:self];
 
-    self.webView = [[UIWebView alloc] initWithFrame:CGRectMake(256, 0, 768, 1004)];
-    self.webView.backgroundColor = [UIColor clearColor];
-    self.webView.autoresizingMask = UIViewAutoresizingFlexibleHeight;
-
-    for (UIView *view in [[[self.webView subviews] objectAtIndex:0] subviews]) {
+    self.cdvViewController = [CDVViewController new];
+    self.cdvViewController.view.frame = CGRectMake(256, 0, 768, 1004);
+    self.cdvViewController.webView.frame = CGRectMake(256, 0, 768, 1004);
+    self.cdvViewController.webView.backgroundColor = [UIColor clearColor];
+    self.cdvViewController.webView.autoresizingMask = UIViewAutoresizingFlexibleHeight;
+    self.cdvViewController.startPage = @"native.html";
+    for (UIView *view in [[[self.cdvViewController.webView subviews] objectAtIndex:0] subviews]) {
         if ([view isKindOfClass:[UIImageView class]]) {
             view.hidden = YES;
         }
     }
-    [self.view addSubview:self.webView];
-    
-    [self.webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"http://cv.kivutar.me"]]];
-    
-    self.webView.scrollView.delegate = self;
+    [self.view addSubview:self.cdvViewController.webView];
+    self.cdvViewController.webView.scrollView.delegate = self;
     
     // Top pull view
     self.pullviewtop = [[UIView alloc] initWithFrame:CGRectMake(0, -80, 768, 80)];
@@ -63,7 +61,7 @@ int current;
     chaptername.font = [UIFont systemFontOfSize:14];
     chaptername.backgroundColor = [UIColor clearColor];
     [self.pullviewtop addSubview:chaptername];
-    [self.webView addSubview:self.pullviewtop];
+    [self.cdvViewController.webView addSubview:self.pullviewtop];
 
     self.triggered = NO;
     self.dragging = NO;
