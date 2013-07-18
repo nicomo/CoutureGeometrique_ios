@@ -16,13 +16,36 @@
     <script src="framework/js/jquery.touchSwipe.min.js"></script>
     <script src="framework/js/jquery.slideshow.js"></script>
     <script type="text/javascript">
-      $('<section>').load('0.html', function() {
-        $('.wrap').append('<section id="chapter0">'+$(this).html()+'</section>');
+      function popify() {
+        $('.pop').append('&nbsp;<i class="icon-eye-open"></i>');
+        var poped = false;
+        $('.pop').click(function() {
+          $('.ptr').css('opacity', 0);
+          if (! poped) {
+            poped = true;
+            $('body').append('<div class="overlay"></div>');
+            $('.overlay').append($(this).attr('data-content'));
+            $('.overlay>*').append('<button class="close"></button>');
+            $('.overlay>*').css('margin-left', - $('.overlay>*').outerWidth()/2);
+            $('.overlay>*').css('margin-top', - $('.overlay>*').outerHeight()/2);
+            $('.overlay').on({'touchstart' : function(){
+              $(this).remove();
+              poped = false;
+            }});
+          }
+        });
+      }
+
+      $('<section>').load('2.html', function() {
+        $('.wrap').append('<section id="chapter2">'+$(this).html()+'</section>');
+        $(".slideshow").slideshow();
+        popify();
       });
     </script>
     <style type="text/css">
       html, body, .container, .row-fluid, #page {
         width: 768px !important;
+        height: auto !important;
       }
       .row-fluid {
         position: static;
