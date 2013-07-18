@@ -13,4 +13,9 @@
 @interface RootViewController : UIViewController
 @property (nonatomic, strong) MasterViewController* masterViewController;
 @property (nonatomic, strong) CDVViewController* cdvViewController;
+@property (nonatomic, strong) UIView* pullviewtop;
+@property (nonatomic, strong) UIView* pullviewbottom;
+@property (nonatomic) BOOL triggeredtop;
+@property (nonatomic) BOOL triggeredbottom;
+@property (nonatomic) BOOL dragging;
 @end

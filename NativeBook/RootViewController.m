@@ -11,16 +11,12 @@
 int current;
 
 @interface RootViewController () <UIScrollViewDelegate>
-@property (nonatomic, strong) UIView* pullviewtop;
-@property (nonatomic, strong) UIView* pullviewbottom;
-@property (nonatomic) BOOL triggeredtop;
-@property (nonatomic) BOOL triggeredbottom;
-@property (nonatomic) BOOL dragging;
+
 @end
 
 @implementation RootViewController
 
-@synthesize masterViewController, cdvViewController;
+@synthesize masterViewController, cdvViewController, triggeredtop, triggeredbottom;
 
 - (void)viewDidLoad
 {

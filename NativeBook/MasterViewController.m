@@ -7,6 +7,7 @@
 //
 
 #import "MasterViewController.h"
+#import "RootViewController.h"
 #import "AppDelegate.h"
 #import "UIMasterViewCell.h"
 #import <QuartzCore/QuartzCore.h>
@@ -81,14 +82,31 @@ NSArray* chapters;
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    // Navigation logic may go here. Create and push another view controller.
-    /*
-     <#DetailViewController#> *detailViewController = [[<#DetailViewController#> alloc] initWithNibName:@"<#Nib name#>" bundle:nil];
-     // ...
-     // Pass the selected object to the new view controller.
-     [self.navigationController pushViewController:detailViewController animated:YES];
-     [detailViewController release];
-     */
+    NSString* call = [NSString stringWithFormat:@"loadpage(%i)", indexPath.row+1];
+    
+    RootViewController* root = (RootViewController*) self.parentViewController;
+    
+    [root.cdvViewController.webView stringByEvaluatingJavaScriptFromString:call];
+
+    if (root.triggeredtop) {
+        root.triggeredtop = NO;
+        [UIView animateWithDuration:0.15 animations:^{
+            CGRect fr = root.pullviewtop.frame;
+            fr.origin.y = -80;
+            root.pullviewtop.frame = fr;
+        }];
+    }
+    
+    if (root.triggeredbottom) {
+        root.triggeredbottom = NO;
+        [UIView animateWithDuration:0.15 animations:^{
+            CGRect fr = root.pullviewbottom.frame;
+            fr.origin.y = root.cdvViewController.webView.scrollView.frame.size.height;
+            root.pullviewbottom.frame = fr;
+        }];
+    }
+    
+    current = indexPath.row+1;
 }
 
 - (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath {
