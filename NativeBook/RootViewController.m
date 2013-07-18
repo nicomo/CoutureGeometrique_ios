@@ -33,10 +33,8 @@ int current;
 
     self.cdvViewController = [CDVViewController new];
     self.cdvViewController.view.frame = CGRectMake(256, 0, 768, 1004);
-    //self.cdvViewController.webView.frame = CGRectMake(0, 0, 768, 1024);
     self.cdvViewController.view.backgroundColor = [UIColor clearColor];
-    //self.cdvViewController.view.autoresizesSubviews = YES;
-    self.cdvViewController.view.autoresizingMask = UIViewAutoresizingFlexibleHeight;
+    self.cdvViewController.webView.backgroundColor = [UIColor clearColor];
     self.cdvViewController.webView.autoresizingMask = UIViewAutoresizingFlexibleHeight;
     for (UIView *view in [[[self.cdvViewController.webView subviews] objectAtIndex:0] subviews]) {
         if ([view isKindOfClass:[UIImageView class]]) {
