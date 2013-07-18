@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="512px" height="365px" viewBox="0 0 512 365" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <title>ceinture_origami-2</title>
+    <description>Created with Sketch (http://www.bohemiancoding.com/sketch)</description>
+    <defs></defs>
+    <g id="Page 1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M366.370405,124 L9,124 L9,168.804838 L151.240337,217 L504,217 L504,169.072066 L366.370405,124 Z M366.370405,124" id="Rectangle 1" fill="#D5FEFF"></path>
+        <path d="M9.21073642,163.309308 L151.424207,210.938817 L503.860558,210.027327" id="Path 1" stroke="#D70014" stroke-dasharray="2"></path>
+        <path d="M8.89128304,128 L366.187853,128 L503.938829,174.360668" id="Path 2" stroke="#D70014" stroke-dasharray="2"></path>
+    </g>
+</svg>

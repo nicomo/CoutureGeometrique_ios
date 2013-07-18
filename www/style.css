@@ -1,0 +1,260 @@
+@import url('assets/font/karbid.css');
+@import url('assets/font/gentium.css');
+@import url('assets/font/roboto.css');
+
+#page {
+  background-color: #6f767c;
+}
+
+a {
+  color: #4fa1db;
+}
+
+#page h1, #page h2, #page h3, #page h4, #page h5, #page p.author, #page p.publisher {
+  font-family: 'ff-karbid-text-web-pro', sans-serif;
+  font-weight: normal;
+}
+
+/* Cover */
+
+#page header {
+  background: #5e8ce2;
+}
+
+#page p.publisher {
+  background: white;
+  color: #5e8ce2;
+  font-weight: bold;
+  text-align: center;
+}
+#page p.publisher span.tld {
+  color: #cb0078;
+}
+
+#page p.author {
+  background: #91c0c1;
+  color: white;
+  font-weight: bold;
+  font-size: 45px;
+}
+
+#page h1 {
+  font-weight: bold;
+  background: #91c0c1;
+  color: white;
+}
+@media (width: 768px) { #page h1 { height: 250px; } #page .logo { height: 504px } }
+
+#page .logo {
+  background-image: url('assets/img/cover.png');
+  background-position: 50%;
+  background-size: 100%;
+}
+
+/* Chapter title */
+
+#page h2 {
+  border-bottom: 5px #00e7e0 solid;
+  color: #00817d;
+  background-size: 100% !important;
+  background-position: 50% !important;
+  padding-left: 84px;
+  padding-right: 0px;
+}
+
+#page h2>span {
+  background: rgba(255,255,255,0.8);
+  border-radius: 3px 0 0 3px;
+  padding: 8px 8px;
+  display: block;
+}
+
+/* Chapter backgrounds */
+
+#page h2#h2_2241R1 { background: url('assets/img/img_headings/2241R1.jpg'); }
+#page h2#h2_0288R1 { background: url('assets/img/img_headings/0288R1.jpg'); }
+#page h2#h2_1760R1 { background: url('assets/img/img_headings/1760R1.jpg'); }
+#page h2#h2_2394R2 { background: url('assets/img/img_headings/2394R2.jpg'); }
+#page h2#h2_2521R1 { background: url('assets/img/img_headings/2521R1.jpg'); }
+#page h2#h2_1394R1 { background: url('assets/img/img_headings/1394R1.jpg'); }
+#page h2#h2_2492R1 { background: url('assets/img/img_headings/2492R1.jpg'); }
+#page h2#h2_0298R1 { background: url('assets/img/img_headings/0298R1.jpg'); }
+#page h2#h2_1198R1 { background: url('assets/img/img_headings/1198R1.jpg'); }
+#page h2#h2_1228R1 { background: url('assets/img/img_headings/1228R1.jpg'); }
+#page h2#h2_1202R1 { background: url('assets/img/img_headings/1202R1.jpg'); }
+#page h2#h2_2290R1 { background: url('assets/img/img_headings/2290R1.jpg'); }
+
+/* chapter bottom border */
+#page #chapter1>h2 { border-bottom: 5px solid #cb0078; }
+#page #chapter2>h2 { border-bottom: 5px solid #009b96; }
+#page #chapter3>h2 { border-bottom: 5px solid #6c6341; }
+#page #chapter4>h2 { border-bottom: 5px solid #d4ba15; }
+#page #chapter5>h2 { border-bottom: 5px solid #f71c5e; }
+#page #chapter6>h2 { border-bottom: 5px solid #6f767c; }
+#page #chapter7>h2 { border-bottom: 5px solid #8fc9ec; }
+#page #chapter8>h2 { border-bottom: 5px solid #363b3b; }
+#page #chapter9>h2 { border-bottom: 5px solid #51829f; }
+#page #chapter10>h2 { border-bottom: 5px solid #efa9ab; }
+#page #chapter11>h2 { border-bottom: 5px solid #b9b75e; }
+#page #chapter12>h2 { border-bottom: 5px solid #ec7266; }
+#page #chapter13>h2 { border-bottom: 5px solid #eec51f; }
+#page #chapter14>h2 { border-bottom: 5px solid #18b8a6; }
+
+#page h3 {
+  color: #00a8a2;
+}
+
+#page h4 {
+  color: #009b96;
+}
+
+#page h5 {
+  color: #00817d;
+}
+
+#page p, #page ul, #page ol, #page li {
+  font-family: 'Gentium Book Basic';
+  font-weight: 400;
+  font-style: normal;
+}
+
+#page figure, #page video {
+  outline: solid 1px #ddd;
+}
+
+/* use color of chapter nav in images color*/
+#page #chapter2 figure img {
+  border-bottom: 5px solid rgba(0, 155, 150, 0.5);
+}
+#page #chapter3 figure img {
+  border-bottom: 5px solid rgba(108, 99, 65, 0.5);
+}
+#page #chapter4 figure img {
+  border-bottom: 5px solid rgba(212, 186, 21, 0.5);
+}
+#page #chapter5 figure img {
+  border-bottom: 5px solid rgba(247, 28, 94, 0.5);
+}
+#page #chapter6 figure img {
+  border-bottom: 5px solid rgba(111, 118, 124, 0.5);
+}
+#page #chapter7 figure img {
+  border-bottom: 5px solid rgba(143, 201, 236, 0.5);
+}
+#page #chapter8 figure img {
+  border-bottom: 5px solid rgba(54, 59, 59, 0.5);
+}
+#page #chapter9 figure img {
+  border-bottom: 5px solid rgba(81, 130, 159, 0.5);
+}
+#page #chapter10 figure img {
+  border-bottom: 5px solid rgba(239, 169, 171, 0.5);
+}
+#page #chapter11 figure img {
+  border-bottom: 5px solid rgba(185, 183, 94, 0.5);
+}
+#page #chapter12 figure img {
+  border-bottom: 5px solid rgba(236, 114, 102, 0.5);
+}
+
+
+#page figcaption {
+  font-family: 'Roboto', sans-serif;
+}
+
+#page blockquote {
+  font-family: 'Gentium Book Basic', sans-serif;
+  font-weight: 400;
+  font-style: italic;
+  border-left-color: #cb0078;
+}
+
+#page .pop {
+  background: #EBE7DB;
+}
+
+.overlay figure,
+.overlay p {
+  border: #cb0078 solid 3px;
+}
+
+/* Slideshow */
+
+#page div.slideshow {
+  background: #EBE7DB;
+}
+
+/* Backmatter */
+
+#page #backmatter {
+  background-color: #E5FFFB;
+}
+
+#page #backmatter h2 {
+  color: #82be66;
+}
+
+#page #copyright {
+  color: white;
+  background: #82be66;
+}
+
+/* Navigation */
+
+nav {
+  font-family: 'ff-karbid-text-web-pro', sans-serif;
+  font-weight: bold;
+}
+
+nav a {
+  color: white;
+  background-image: url('framework/img/active.png'), url('framework/img/shadow.png');
+  background-size: 40px;
+  background-position: 256px center, 256px center;
+  background-repeat: no-repeat;
+}
+
+nav a.active {
+  background-color: transparent;
+  background-image: url('framework/img/active.png'), url('framework/img/shadow.png');
+  background-size: 40px;
+  background-position: 216px center, 256px center;
+  background-repeat: no-repeat;
+}
+
+nav a:hover {
+  color: white;
+}
+
+nav>ul>li>a,
+nav>ul>li>a:hover {
+  color: #cccccc;
+  font-weight: normal;
+  text-align: center;
+}
+
+nav ul ul {
+  box-shadow: inset 0px 5px 10px 0px rgba(0,0,0,.2), inset 0px -5px 10px 0px rgba(0,0,0,.2);
+}
+
+/* Menu background colors */
+
+nav>ul>li>ul>li:nth-child(1)  { background-color: #cb0078; }
+nav>ul>li>ul>li:nth-child(2)  { background-color: #009b96; }
+nav>ul>li>ul>li:nth-child(3)  { background-color: #6c6341; }
+nav>ul>li>ul>li:nth-child(4)  { background-color: #d4ba15; }
+nav>ul>li>ul>li:nth-child(5)  { background-color: #f71c5e; }
+nav>ul>li>ul>li:nth-child(6)  { background-color: #6f767c; }
+nav>ul>li>ul>li:nth-child(7)  { background-color: #8fc9ec; }
+nav>ul>li>ul>li:nth-child(8)  { background-color: #363b3b; }
+nav>ul>li>ul>li:nth-child(9)  { background-color: #51829f; }
+nav>ul>li>ul>li:nth-child(10) { background-color: #efa9ab; }
+nav>ul>li>ul>li:nth-child(11) { background-color: #b9b75e; }
+nav>ul>li>ul>li:nth-child(12) { background-color: #ec7266; }
+nav>ul>li>ul>li:nth-child(13) { background-color: #eec51f; }
+nav>ul>li>ul>li:nth-child(14) { background-color: #18b8a6; }
+
+nav>ul>li>ul>li>ul {
+  background-color: transparent;
+  margin-bottom: 0px;
+}

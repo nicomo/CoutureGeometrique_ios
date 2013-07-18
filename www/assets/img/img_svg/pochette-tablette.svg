@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="512px" height="365px" viewBox="0 0 512 365" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <title>pochette-tablette</title>
+    <description>Created with Sketch (http://www.bohemiancoding.com/sketch)</description>
+    <defs></defs>
+    <g id="Page 1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M157,25 L157,276.952018 L185.632183,308 L356.978163,308 L388,270.781769 L388,25 L157,25 Z M157,25" id="Rectangle 2" fill="#DEEFEF"></path>
+        <path d="M154,28 L154,276.164764 L181.934884,311 L354.916282,311 L385,274.493399 L385,28 L154,28 Z M154,28" id="Rectangle 2" fill="#D5FEFF"></path>
+        <path d="M177.52684,31.6484822 L177.52684,285.185414 L361.47316,285.185401 L361.47316,29.1867818" id="Path 1" stroke="#D70014" stroke-dasharray="2"></path>
+        <path d="M151.568698,281.849851 L177.52684,316.562975 L151.29107,316.279528 L151.568698,281.849851 Z M151.568698,281.849851" id="Path 2" stroke="#979797" stroke-dasharray="2" fill="#DEEEEF"></path>
+        <path d="M149.041858,284.344657 L175,319.057781 L148.76423,318.774334 L149.041858,284.344657 Z M149.041858,284.344657" id="Path 2" stroke="#979797" stroke-dasharray="2" fill="#D5FEFF"></path>
+        <path d="M392.795492,274.839462 L362,314.441098 L393.454932,314.562975 L392.795492,274.839462 Z M392.795492,274.839462" id="Path 3" stroke="#979797" stroke-dasharray="2" fill="#DEEEEF"></path>
+        <path d="M389.795492,276.839462 L359,316.441098 L390.454932,316.562975 L389.795492,276.839462 Z M389.795492,276.839462" id="Path 3" stroke="#979797" stroke-dasharray="2" fill="#D5FEFF"></path>
+    </g>
+</svg>

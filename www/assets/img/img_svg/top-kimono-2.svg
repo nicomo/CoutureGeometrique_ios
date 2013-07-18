@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="1236px" height="824px" viewBox="0 0 1236 824" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <title>topkimono-2</title>
+    <description>Created with Sketch (http://www.bohemiancoding.com/sketch)</description>
+    <defs></defs>
+    <g id="Page 1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M-15,14 L-15,838 L1221,838 L1221,14 L-15,14 Z M-15,14" id="Rectangle 7" fill="#FFFFFF"></path>
+        <g id="Group" transform="translate(602.500000, 411.000000) rotate(-90.000000) translate(-602.500000, -411.000000) translate(255.000000, -1.000000)" stroke="#979797" fill="#D5FEFF">
+            <path d="M200.254237,0 L200.254237,412 L288.012712,412 C299.792373,406.114286 333.610905,400.228571 347.5,400.228571 C361.592006,400.228571 394.029661,406.114286 406.398305,412 L494.745763,412 L494.745763,0 L200.254237,0 Z M200.254237,0" id="Rectangle 1"></path>
+            <path d="M406.398305,412 C406.398313,412 371.648305,435.542862 347.5,435.542857 C323.351695,435.542852 288.012713,412 288.012712,412 L200.254237,412 L200.254237,824 L494.745763,824 L494.745763,412 L406.398305,412 Z M406.398305,412" id="Rectangle 2"></path>
+            <path d="M0,253.085714 L0,412 L200.254237,412 L200.254237,253.085714 L0,253.085714 Z M0,253.085714" id="Rectangle 3"></path>
+            <path d="M0,412 L0,570.914286 L200.254237,570.914286 L200.254237,412 L0,412 Z M0,412" id="Rectangle 3"></path>
+            <path d="M494.745763,412 L494.745763,570.914286 L695,570.914286 L695,412 L494.745763,412 Z M494.745763,412" id="Rectangle 3"></path>
+            <path d="M494.745763,253.085714 L494.745763,412 L695,412 L695,253.085714 L494.745763,253.085714 Z M494.745763,253.085714" id="Rectangle 3"></path>
+        </g>
+        <text id="DOS" fill="#7C7979" font-family="Helvetica Neue" font-size="48.5581395" font-weight="normal" x="800.758462" y="441.280739">
+            <tspan>DOS</tspan>
+        </text>
+        <text id="DEVANT" fill="#7C7979" font-family="Helvetica Neue" font-size="48.5581395" font-weight="normal" x="304.413793" y="441.280739">
+            <tspan>DEVANT</tspan>
+        </text>
+    </g>
+</svg>

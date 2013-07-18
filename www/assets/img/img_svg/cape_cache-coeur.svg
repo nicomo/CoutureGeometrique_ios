@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="618px" height="525px" viewBox="0 0 618 525" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <title>cape_cache-coeur</title>
+    <description>Created with Sketch (http://www.bohemiancoding.com/sketch)</description>
+    <defs></defs>
+    <g id="Page 1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M156.181208,493.125 C79.5234703,442.151196 29,354.984257 29,256.015625 C29,157.046993 79.5234703,69.8800537 156.181208,18.90625 L470.818792,18.90625 C547.47653,69.8800537 598,157.046993 598,256.015625 C598,354.984257 547.47653,442.151196 470.818792,493.125 Z M156.181208,493.125" id="Oval 1" fill="#D5FEFF"></path>
+        <path d="M24,20 L24,494" id="Line" stroke="#4A4A4A" stroke-linecap="square" fill="#4A4A4A"></path>
+        <path id="Line decoration-1" d="M24,20.8 C25.05,24.58 25.95,27.8200001 27,31.6000001 C24.9,31.6 23.1,31.6 21,31.5999999 C22.05,27.8199999 22.95,24.58 24,20.8 C24,20.8 24,20.8 24,20.8 Z M24,20.8" stroke="#4A4A4A" stroke-linecap="square" fill="#4A4A4A"></path>
+        <path id="Line decoration-2" d="M24,494 C25.05,490.22 25.95,486.98 27,483.2 C24.9,483.2 23.1,483.2 21,483.2 C22.05,486.98 22.95,490.22 24,494 C24,494 24,494 24,494 Z M24,494" stroke="#4A4A4A" stroke-linecap="square" fill="#4A4A4A"></path>
+        <text id="100 cm" fill="#000000" transform="translate(12.500000, 261.333831) rotate(-270.000000) translate(-12.500000, -261.333831) " font-family="Roboto" font-size="14" font-weight="260" x="-15.253344" y="270.297699">
+            <tspan>100 cm</tspan>
+        </text>
+        <path d="M596.688038,265.333483 L314.239928,265.333483 C314.247679,265.413357 314.251647,265.494376 314.251647,265.576344 C314.251647,266.917629 313.189033,268.004955 311.878232,268.004955 C310.567431,268.004955 309.504817,266.917629 309.504817,265.576344 C309.504817,264.235059 310.567431,263.147733 311.878232,263.147733 C313.108928,263.147733 314.120844,264.106224 314.239928,265.333483 Z M596.688038,265.333483" id="Line" stroke="#4A4A4A" stroke-linecap="square" fill="#4A4A4A"></path>
+        <path id="Line decoration-1" d="M595.703146,265.333483 C591.923146,264.283483 588.683146,263.383483 584.903146,262.333483 C584.903146,264.433483 584.903146,266.233483 584.903146,268.333483 C588.683146,267.283483 591.923146,266.383483 595.703146,265.333483 C595.703146,265.333483 595.703146,265.333483 595.703146,265.333483 Z M595.703146,265.333483" stroke="#4A4A4A" stroke-linecap="square" fill="#4A4A4A"></path>
+        <text id="Tailles 36-40 = 60 c" fill="#000000" font-family="Roboto" font-size="14" font-weight="260" x="348" y="327.285736">
+            <tspan>Tailles 36-40 = 60 cm</tspan>
+        </text>
+        <path d="M244.5,19.5 L244.5,123" id="Line" stroke="#4A4A4A" stroke-linecap="square" fill="#4A4A4A"></path>
+        <path id="Line decoration-1" d="M244.5,20.3 C245.55,24.08 246.45,27.3200001 247.5,31.1000001 C245.4,31.1 243.6,31.1 241.5,31.0999999 C242.55,27.3199999 243.45,24.08 244.5,20.3 C244.5,20.3 244.5,20.3 244.5,20.3 Z M244.5,20.3" stroke="#4A4A4A" stroke-linecap="square" fill="#4A4A4A"></path>
+        <path id="Line decoration-2" d="M244.5,122.5 C245.55,118.72 246.45,115.48 247.5,111.7 C245.4,111.7 243.6,111.7 241.5,111.7 C242.55,115.48 243.45,118.72 244.5,122.5 C244.5,122.5 244.5,122.5 244.5,122.5 Z M244.5,122.5" stroke="#4A4A4A" stroke-linecap="square" fill="#4A4A4A"></path>
+        <text id="20 cm" fill="#4A4A4A" transform="translate(259.000000, 76.500000) rotate(-270.000000) translate(-259.000000, -76.500000) " font-family="Roboto" font-size="14" font-weight="260" x="235" y="85.4638672">
+            <tspan>20 cm</tspan>
+        </text>
+        <path d="M217,123.5 L406,123.5" id="Line" stroke="#4A4A4A" stroke-linecap="square" fill="#4A4A4A"></path>
+        <path id="Line decoration-1" d="M406,123.5 C402.22,122.45 398.98,121.55 395.2,120.5 C395.2,122.6 395.2,124.4 395.2,126.5 C398.98,125.45 402.22,124.55 406,123.5 C406,123.5 406,123.5 406,123.5 Z M406,123.5" stroke="#4A4A4A" stroke-linecap="square" fill="#4A4A4A"></path>
+        <path id="Line decoration-2" d="M217.8,123.5 C221.58,122.45 224.82,121.55 228.6,120.5 C228.6,122.6 228.6,124.4 228.6,126.5 C224.82,125.45 221.58,124.55 217.8,123.5 C217.8,123.5 217.8,123.5 217.8,123.5 Z M217.8,123.5" stroke="#4A4A4A" stroke-linecap="square" fill="#4A4A4A"></path>
+        <text id="largeur d'épaules + " fill="#4A4A4A" font-family="Roboto" font-size="14" font-weight="260" x="298" y="81.8518299">
+            <tspan>largeur d'épaules + 4cm</tspan>
+        </text>
+        <g id="Group" transform="translate(197.000000, 121.123063)" fill="#4A4A4A">
+            <path d="M214.133261,0.676401423 L228.354744,103.94024" id="Line" stroke="#4A4A4A" stroke-linecap="square"></path>
+            <path id="Line decoration-1" d="M228.322201,103.703938 C228.846669,99.8160293 229.296214,96.4835362 229.820682,92.5956277 C227.740318,92.8821353 225.957149,93.1277132 223.876786,93.4142208 C225.432681,97.0156217 226.766305,100.102537 228.322201,103.703938 C228.322201,103.703938 228.322201,103.703938 228.322201,103.703938 Z M228.322201,103.703938" stroke="#4A4A4A" stroke-linecap="square"></path>
+            <path id="Line decoration-2" d="M214.242407,1.46892093 C215.798302,5.07032182 217.131926,8.15723688 218.687822,11.7586381 C216.607458,12.0451455 214.824289,12.2907232 212.743925,12.5772305 C213.268394,8.68932237 213.717938,5.3568294 214.242407,1.46892093 C214.242407,1.46892093 214.242407,1.46892093 214.242407,1.46892093 Z M214.242407,1.46892093" stroke="#4A4A4A" stroke-linecap="square"></path>
+            <path d="M214,104.5 L228,104.5" id="Line" stroke="#4A4A4A" stroke-linecap="square"></path>
+            <path id="Line decoration-1" d="M228,101.5 C228,103.6 228,105.4 228,107.5" stroke="#4A4A4A" stroke-linecap="square"></path>
+            <path id="Line decoration-2" d="M214,101.5 C214,103.6 214,105.4 214,107.5" stroke="#4A4A4A" stroke-linecap="square"></path>
+            <text id="2 cm" font-family="Roboto" font-size="14" font-weight="260" x="0" y="125.463867">
+                <tspan>2 cm</tspan>
+            </text>
+            <text id="22 cm" transform="translate(241.318304, 48.377222) rotate(-279.000000) translate(-241.318304, -48.377222) " font-family="Roboto" font-size="14" font-weight="260" x="216.162305" y="57.341089">
+                <tspan>22 cm</tspan>
+            </text>
+        </g>
+        <path d="M217.263412,122.939052 L203.041928,226.245862" id="Line" stroke="#4A4A4A" stroke-linecap="square" fill="#4A4A4A"></path>
+        <path id="Line decoration-1" d="M203.080264,225.967391 C204.635956,222.365903 205.969407,219.278912 207.5251,215.677424 C205.44472,215.391033 203.661538,215.145556 201.581158,214.859165 C202.105845,218.747044 202.555576,222.079512 203.080264,225.967391 C203.080264,225.967391 203.080264,225.967391 203.080264,225.967391 Z M203.080264,225.967391" stroke="#4A4A4A" stroke-linecap="square" fill="#4A4A4A"></path>
+        <path id="Line decoration-2" d="M217.154311,123.731578 C217.678998,127.619457 218.12873,130.951925 218.653417,134.839804 C216.573037,134.553413 214.789854,134.307936 212.709474,134.021545 C214.265167,130.420057 215.598618,127.333066 217.154311,123.731578 C217.154311,123.731578 217.154311,123.731578 217.154311,123.731578 Z M217.154311,123.731578" stroke="#4A4A4A" stroke-linecap="square" fill="#4A4A4A"></path>
+        <path d="M203,226.5 L217,226.5" id="Line" stroke="#4A4A4A" stroke-linecap="square" fill="#4A4A4A"></path>
+        <path id="Line decoration-1" d="M217,223.5 C217,225.6 217,227.4 217,229.5" stroke="#4A4A4A" stroke-linecap="square" fill="#4A4A4A"></path>
+        <path id="Line decoration-2" d="M203,223.5 C203,225.6 203,227.4 203,229.5" stroke="#4A4A4A" stroke-linecap="square" fill="#4A4A4A"></path>
+        <text id="2 cm" fill="#4A4A4A" font-family="Roboto" font-size="14" font-weight="260" x="407" y="246.882784">
+            <tspan>2 cm</tspan>
+        </text>
+        <text id="22 cm" fill="#4A4A4A" transform="translate(198.971616, 167.131071) rotate(-82.000000) translate(-198.971616, -167.131071) " font-family="Roboto" font-size="14" font-weight="260" x="172.954825" y="176.094939">
+            <tspan>22 cm</tspan>
+        </text>
+        <path d="M94.6666645,221 L94.6666645,289" id="Line" stroke="#D70014" stroke-linecap="square" fill="#4A4A4A"></path>
+        <path id="Line decoration-1" d="M94.6666645,289 C95.7166645,285.22 96.6166645,281.98 97.6666645,278.2 C95.5666645,278.2 93.7666645,278.2 91.6666645,278.2 C92.7166645,281.98 93.6166645,285.22 94.6666645,289 C94.6666645,289 94.6666645,289 94.6666645,289 Z M94.6666645,289" stroke="#D70014" stroke-linecap="square" fill="#4A4A4A"></path>
+        <path id="Line decoration-2" d="M94.6666645,221.8 C95.7166645,225.58 96.6166645,228.82 97.6666645,232.6 C95.5666645,232.6 93.7666645,232.6 91.6666645,232.6 C92.7166645,228.82 93.6166645,225.58 94.6666645,221.8 C94.6666645,221.8 94.6666645,221.8 94.6666645,221.8 Z M94.6666645,221.8" stroke="#D70014" stroke-linecap="square" fill="#4A4A4A"></path>
+        <text id="droit fil" fill="#D70014" transform="translate(113.000000, 263.500000) rotate(-270.000000) translate(-113.000000, -263.500000) " font-family="Roboto" font-size="14" font-weight="260" x="85" y="272.463867">
+            <tspan>droit fil</tspan>
+        </text>
+        <path d="M494.008265,86.8402216 C494.008265,86.8402216 365.903568,87.2093937 349.490215,86.8402216 C327.146137,86.3376545 310.229065,122.150712 310.229065,122.150712 C310.229065,122.150712 327.42564,86.8402216 310.229065,86.8402216 C310.229065,86.8402216 287.566066,86.8402216 287.566066,86.8402216" id="Path 11" stroke="#979797"></path>
+        <path d="M518.108596,264.138421 C518.108596,264.138421 390.003898,264.507593 373.590546,264.138421 C351.246468,263.635854 334.329396,299.448911 334.329396,299.448911 C334.329396,299.448911 351.525971,264.138421 334.329396,264.138421 C334.329396,264.138421 311.666397,264.138421 311.666397,264.138421" id="Path 11" stroke="#979797" transform="translate(414.887496, 281.791046) rotate(-180.000000) translate(-414.887496, -281.791046) "></path>
+        <text id="Tailles 42-44 = 70 c" fill="#000000" font-family="Roboto" font-size="14" font-weight="260" x="348" y="358">
+            <tspan>Tailles 42-44 = 70 cm</tspan>
+        </text>
+    </g>
+</svg>

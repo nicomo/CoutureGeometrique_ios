@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="618px" height="535px" viewBox="0 0 618 535" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <title>tablier</title>
+    <description>Created with Sketch (http://www.bohemiancoding.com/sketch)</description>
+    <defs></defs>
+    <g id="Page 1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group" transform="translate(9.000000, 47.000000)">
+            <path d="M23.0051203,0 C10.2997432,0 0,10.2951495 0,23.0071908 L0,446.992809 C0,459.69933 10.2990918,470 23.0051203,470 L564.99488,470 C577.700257,470 588,459.704851 588,446.992809 L588,23.0071908 C588,10.3006702 577.700908,0 564.99488,0 L23.0051203,0 Z M23.0051203,0" id="Rectangle 1" fill="#D5FEFF"></path>
+            <path d="M573.331126,461.196858 L12.6650259,461.841633 C8.40433167,461.846529 6.11486684,463.409439 7.57253849,465.333435 C9.05255494,467.257009 13.6574822,468.820236 17.8466956,468.825013 L569.459352,469.453414 C573.650908,469.458185 577.971237,467.616192 579.085563,465.33344 C580.172265,463.046054 577.58875,461.191958 573.331126,461.196858 Z M573.331126,461.196858" id="Path" fill="#A1B8B8"></path>
+            <path d="M573.852896,4.32757201 L13.1867965,4.97234684 C8.9261023,4.9772425 6.63663748,6.54015273 8.09430913,8.46414921 C9.57432558,10.3877228 14.1792529,11.9509504 18.3684663,11.9557265 L569.981123,12.5841276 C574.172678,12.5888989 578.493007,10.7469061 579.607333,8.46415369 C580.694036,6.17676815 578.110521,4.32267146 573.852896,4.32757201 Z M573.852896,4.32757201" id="Path" fill="#A1B8B8" transform="translate(293.755256, 8.455850) rotate(-180.000000) translate(-293.755256, -8.455850) "></path>
+            <path d="M290.5,7.39212329 L290.5,464.607877" id="Line" stroke="#A1B8B8" stroke-width="5" stroke-linecap="square" fill="#A1B8B8"></path>
+            <path d="M241.403277,11.7815052 L289.817666,11.4090076 L289.817666,52.6070384 C289.817666,52.6070378 278.474107,47.2736485 266.85046,47.2736485 C257.447054,47.9006724 250.416371,52.6070378 241.403277,53.1328772 C241.403277,53.1328772 236.700179,49.1112967 241.403277,35.1217346 C246.106375,21.1321724 241.403277,11.7815052 241.403277,11.7815052 Z M241.403277,11.7815052" id="Path 2" fill="#A1B8B8"></path>
+            <path d="M225.970732,13.9618877 C225.970732,13.9618877 233.620065,13.3715901 241.159977,13.3715901 C241.466144,13.3715901 259.561267,13.3715901 272.235382,21.9413863 C286.006778,31.2531262 287.098679,42.038683 287.098677,52.3086596 C287.098668,67.1957267 287.098677,83.5335906 287.098677,83.5335906" id="Path 3" stroke="#D5FEFF" stroke-width="3"></path>
+        </g>
+        <g id="Group" transform="translate(17.000000, 9.000000)">
+            <path d="M285.5,26 C443.177304,26 571,21.970563 571,17 C571,12.029437 443.177304,8 285.5,8 C127.822696,8 0,12.029437 0,17 C0,21.970563 127.822696,26 285.5,26 Z M285.5,26" id="Oval 1" stroke="#979797" stroke-width="2"></path>
+            <path d="M217,0 L217,18 L340,18 L340,0 L217,0 Z M217,0" id="Rectangle 9" fill="#FFFFFF"></path>
+            <text id="laize 140 - 150 cm" fill="#000000" font-family="Helvetica" font-size="14" font-weight="normal" x="220" y="14">
+                <tspan>laize 140 - 150 cm</tspan>
+            </text>
+            <path d="M276,23 L276,30 L286,30 L286,23 L276,23 Z M276,23" id="Rectangle 5" fill="#FFFFFF"></path>
+            <path d="M286.5,29 C287.880712,29 289,27.8807119 289,26.5 C289,25.1192881 287.880712,24 286.5,24 C285.119288,24 284,25.1192881 284,26.5 C284,27.8807119 285.119288,29 286.5,29 Z M286.5,29" id="Oval 2" fill="#9B9B9B"></path>
+            <path d="M276.5,29 C277.880712,29 279,27.8807119 279,26.5 C279,25.1192881 277.880712,24 276.5,24 C275.119288,24 274,25.1192881 274,26.5 C274,27.8807119 275.119288,29 276.5,29 Z M276.5,29" id="Oval 2" fill="#9B9B9B"></path>
+        </g>
+        <g id="Group" transform="translate(10.000000, 164.000000)">
+            <path d="M1,1 L1,291 L252,291 L252,1 L1,1 Z M1,1" id="Rectangle 6" stroke="#000000"></path>
+            <path d="M63,118 L63,212 L189,212 L189,118 L63,118 Z M63,118" id="Rectangle 7" stroke="#000000"></path>
+            <path d="M0,148.5 L63,148.5" id="Line" stroke="#4A4A4A" stroke-linecap="square" fill="#4A4A4A"></path>
+            <path id="Line decoration-1" d="M63,148.5 C59.22,147.45 55.98,146.55 52.2,145.5 C52.2,147.6 52.2,149.4 52.2,151.5 C55.98,150.45 59.22,149.55 63,148.5 C63,148.5 63,148.5 63,148.5 Z M63,148.5" stroke="#4A4A4A" stroke-linecap="square" fill="#4A4A4A"></path>
+            <path id="Line decoration-2" d="M0.8,148.5 C4.58,147.45 7.82,146.55 11.6,145.5 C11.6,147.6 11.6,149.4 11.6,151.5 C7.82,150.45 4.58,149.55 0.8,148.5 C0.8,148.5 0.8,148.5 0.8,148.5 Z M0.8,148.5" stroke="#4A4A4A" stroke-linecap="square" fill="#4A4A4A"></path>
+            <path d="M63.0084897,101.5 L188.344066,101.5" id="Line" stroke="#4A4A4A" stroke-linecap="square" fill="#4A4A4A"></path>
+            <path id="Line decoration-1" d="M188.008487,101.5 C184.228487,100.45 180.988487,99.55 177.208487,98.5 C177.208487,100.6 177.208487,102.4 177.208487,104.5 C180.988487,103.45 184.228487,102.55 188.008487,101.5 C188.008487,101.5 188.008487,101.5 188.008487,101.5 Z M188.008487,101.5" stroke="#4A4A4A" stroke-linecap="square" fill="#4A4A4A"></path>
+            <path id="Line decoration-2" d="M63.8084897,101.5 C67.5884896,100.45 70.8284896,99.55 74.6084895,98.5 C74.6084895,100.6 74.6084895,102.4 74.6084895,104.5 C70.8284896,103.45 67.5884896,102.55 63.8084897,101.5 C63.8084897,101.5 63.8084897,101.5 63.8084897,101.5 Z M63.8084897,101.5" stroke="#4A4A4A" stroke-linecap="square" fill="#4A4A4A"></path>
+            <path d="M62.5,118 L62.5,0" id="Line" stroke="#4A4A4A" stroke-linecap="square" fill="#4A4A4A"></path>
+            <path id="Line decoration-1" d="M62.5,0 C61.45,3.78000005 60.55,7.02000009 59.5,10.8000001 C61.6,10.8 63.4,10.8 65.5,10.7999999 C64.45,7.01999991 63.55,3.77999995 62.5,0 C62.5,0 62.5,0 62.5,0 Z M62.5,0" stroke="#4A4A4A" stroke-linecap="square" fill="#4A4A4A"></path>
+            <path id="Line decoration-2" d="M62.5,117.2 C61.45,113.42 60.55,110.18 59.5,106.4 C61.6,106.4 63.4,106.4 65.5,106.4 C64.45,110.18 63.55,113.42 62.5,117.2 C62.5,117.2 62.5,117.2 62.5,117.2 Z M62.5,117.2" stroke="#4A4A4A" stroke-linecap="square" fill="#4A4A4A"></path>
+            <path d="M78.5,291 L78.5,212" id="Line" stroke="#4A4A4A" stroke-linecap="square" fill="#4A4A4A"></path>
+            <path id="Line decoration-1" d="M78.5,212 C77.45,215.78 76.55,219.02 75.5,222.8 C77.6,222.8 79.4,222.8 81.5,222.8 C80.45,219.02 79.55,215.78 78.5,212 C78.5,212 78.5,212 78.5,212 Z M78.5,212" stroke="#4A4A4A" stroke-linecap="square" fill="#4A4A4A"></path>
+            <path id="Line decoration-2" d="M78.5,290.2 C77.45,286.42 76.55,283.18 75.5,279.4 C77.6,279.4 79.4,279.4 81.5,279.4 C80.45,283.18 79.55,286.42 78.5,290.2 C78.5,290.2 78.5,290.2 78.5,290.2 Z M78.5,290.2" stroke="#4A4A4A" stroke-linecap="square" fill="#4A4A4A"></path>
+            <path d="M204.5,211.609244 L204.5,119" id="Line" stroke="#4A4A4A" stroke-linecap="square" fill="#4A4A4A"></path>
+            <path id="Line decoration-1" d="M204.5,119.609245 C203.45,123.389245 202.55,126.629245 201.5,130.409245 C203.6,130.409245 205.4,130.409245 207.5,130.409245 C206.45,126.629245 205.55,123.389245 204.5,119.609245 C204.5,119.609245 204.5,119.609245 204.5,119.609245 Z M204.5,119.609245" stroke="#4A4A4A" stroke-linecap="square" fill="#4A4A4A"></path>
+            <path id="Line decoration-2" d="M204.5,210.809244 C203.45,207.029244 202.55,203.789244 201.5,200.009244 C203.6,200.009244 205.4,200.009244 207.5,200.009244 C206.45,203.789244 205.55,207.029244 204.5,210.809244 C204.5,210.809244 204.5,210.809244 204.5,210.809244 Z M204.5,210.809244" stroke="#4A4A4A" stroke-linecap="square" fill="#4A4A4A"></path>
+            <path d="M259.5,290.608108 L259.5,1.39189189" id="Line" stroke="#4A4A4A" stroke-linecap="square" fill="#4A4A4A"></path>
+            <path id="Line decoration-1" d="M259.5,1.60810893 C258.45,5.38810897 257.55,8.628109 256.5,12.408109 C258.6,12.4081089 260.4,12.4081089 262.5,12.4081088 C261.45,8.62810883 260.55,5.38810888 259.5,1.60810893 C259.5,1.60810893 259.5,1.60810893 259.5,1.60810893 Z M259.5,1.60810893" stroke="#4A4A4A" stroke-linecap="square" fill="#4A4A4A"></path>
+            <path id="Line decoration-2" d="M259.5,289.808108 C258.45,286.028108 257.55,282.788108 256.5,279.008108 C258.6,279.008108 260.4,279.008108 262.5,279.008108 C261.45,282.788108 260.55,286.028108 259.5,289.808108 C259.5,289.808108 259.5,289.808108 259.5,289.808108 Z M259.5,289.808108" stroke="#4A4A4A" stroke-linecap="square" fill="#4A4A4A"></path>
+            <path d="M189,118.5 L252,118.5" id="Line" stroke="#4A4A4A" stroke-linecap="square" fill="#4A4A4A"></path>
+            <path id="Line decoration-1" d="M252,118.5 C248.22,117.45 244.98,116.55 241.2,115.5 C241.2,117.6 241.2,119.4 241.2,121.5 C244.98,120.45 248.22,119.55 252,118.5 C252,118.5 252,118.5 252,118.5 Z M252,118.5" stroke="#4A4A4A" stroke-linecap="square" fill="#4A4A4A"></path>
+            <path id="Line decoration-2" d="M189.8,118.5 C193.58,117.45 196.82,116.55 200.6,115.5 C200.6,117.6 200.6,119.4 200.6,121.5 C196.82,120.45 193.58,119.55 189.8,118.5 C189.8,118.5 189.8,118.5 189.8,118.5 Z M189.8,118.5" stroke="#4A4A4A" stroke-linecap="square" fill="#4A4A4A"></path>
+            <path d="M0,300.5 L250.607812,300.5" id="Line" stroke="#4A4A4A" stroke-linecap="square" fill="#4A4A4A"></path>
+            <path id="Line decoration-1" d="M249.999994,300.5 C246.219994,299.45 242.979994,298.55 239.199994,297.5 C239.199994,299.6 239.199994,301.4 239.199994,303.5 C242.979994,302.45 246.219994,301.55 249.999994,300.5 C249.999994,300.5 249.999994,300.5 249.999994,300.5 Z M249.999994,300.5" stroke="#4A4A4A" stroke-linecap="square" fill="#4A4A4A"></path>
+            <path id="Line decoration-2" d="M0.799999981,300.5 C4.57999989,299.45 7.81999981,298.55 11.5999997,297.5 C11.5999997,299.6 11.5999997,301.4 11.5999997,303.5 C7.81999981,302.45 4.57999989,301.55 0.799999981,300.5 C0.799999981,300.5 0.799999981,300.5 0.799999981,300.5 Z M0.799999981,300.5" stroke="#4A4A4A" stroke-linecap="square" fill="#4A4A4A"></path>
+            <text id="8 cm" fill="#4A4A4A" font-family="Helvetica Neue" font-size="14" font-weight="normal" x="16" y="146.918032">
+                <tspan>8 cm</tspan>
+            </text>
+            <text id="8 cm" fill="#4A4A4A" font-family="Helvetica Neue" font-size="14" font-weight="normal" x="204" y="115.918032">
+                <tspan>8 cm</tspan>
+            </text>
+            <text id="16 cm" fill="#4A4A4A" font-family="Helvetica Neue" font-size="14" font-weight="normal" x="100" y="99.9180323">
+                <tspan>16 cm</tspan>
+            </text>
+            <text id="32 cm" fill="#4A4A4A" font-family="Helvetica Neue" font-size="14" font-weight="normal" x="104" y="319.918032">
+                <tspan>32 cm</tspan>
+            </text>
+            <text id="15 cm" fill="#4A4A4A" transform="translate(73.000000, 54.000000) rotate(-270.000000) translate(-73.000000, -54.000000) " font-family="Helvetica Neue" font-size="14" font-weight="normal" x="50" y="61.9180323">
+                <tspan>15 cm</tspan>
+            </text>
+            <text id="12 cm" fill="#4A4A4A" transform="translate(215.000000, 164.000000) rotate(-270.000000) translate(-215.000000, -164.000000) " font-family="Helvetica Neue" font-size="14" font-weight="normal" x="192" y="171.918032">
+                <tspan>12 cm</tspan>
+            </text>
+            <text id="10 cm" fill="#4A4A4A" transform="translate(89.000000, 250.000000) rotate(-270.000000) translate(-89.000000, -250.000000) " font-family="Helvetica Neue" font-size="14" font-weight="normal" x="68" y="257.918032">
+                <tspan>10 cm</tspan>
+            </text>
+            <text id="37 cm" fill="#4A4A4A" transform="translate(271.000000, 143.000000) rotate(-270.000000) translate(-271.000000, -143.000000) " font-family="Helvetica Neue" font-size="14" font-weight="normal" x="248" y="150.918032">
+                <tspan>37 cm</tspan>
+            </text>
+        </g>
+        <g id="Group" transform="translate(319.000000, 69.000000)">
+            <g transform="translate(0.000000, 220.000000)">
+                <path d="M3,0 C3,0 3,196.000038 276,196" id="Path 13" stroke="#979797" stroke-dasharray="2"></path>
+                <path d="M2,0 L2,196 L276,196 L276,0 L2,0 Z M2,0" id="Rectangle 8" stroke="#000000"></path>
+                <path d="M283.5,195.608 L283.5,0.392" id="Line" stroke="#4A4A4A" stroke-linecap="square" fill="#4A4A4A"></path>
+                <path id="Line decoration-1" d="M283.5,0.608003414 C282.45,4.38800339 281.55,7.62800338 280.5,11.4080034 C282.6,11.4080033 284.4,11.4080032 286.5,11.4080031 C285.45,7.62800321 284.55,4.3880033 283.5,0.608003414 C283.5,0.608003414 283.5,0.608003414 283.5,0.608003414 Z M283.5,0.608003414" stroke="#4A4A4A" stroke-linecap="square" fill="#4A4A4A"></path>
+                <path id="Line decoration-2" d="M283.5,194.808 C282.45,191.028 281.55,187.788 280.5,184.008 C282.6,184.008 284.4,184.008 286.5,184.008 C285.45,187.788 284.55,191.028 283.5,194.808 C283.5,194.808 283.5,194.808 283.5,194.808 Z M283.5,194.808" stroke="#4A4A4A" stroke-linecap="square" fill="#4A4A4A"></path>
+                <text id="25 cm" fill="#4A4A4A" transform="translate(292.500000, 104.547966) rotate(-270.000000) translate(-292.500000, -104.547966) " font-family="Helvetica Neue" font-size="14" font-weight="normal" x="269.75" y="112.465998">
+                    <tspan>25 cm</tspan>
+                </text>
+                <path d="M0.391737892,201.5 L275,201.5" id="Line" stroke="#4A4A4A" stroke-linecap="square" fill="#4A4A4A"></path>
+                <path id="Line decoration-1" d="M274.391724,201.5 C270.611724,200.45 267.371724,199.55 263.591724,198.5 C263.591724,200.6 263.591724,202.4 263.591724,204.5 C267.371724,203.45 270.611724,202.55 274.391724,201.5 C274.391724,201.5 274.391724,201.5 274.391724,201.5 Z M274.391724,201.5" stroke="#4A4A4A" stroke-linecap="square" fill="#4A4A4A"></path>
+                <path id="Line decoration-2" d="M1.19173785,201.5 C4.97173765,200.45 8.21173749,199.55 11.9917373,198.5 C11.9917373,200.6 11.9917373,202.4 11.9917373,204.5 C8.21173749,203.45 4.97173765,202.55 1.19173785,201.5 C1.19173785,201.5 1.19173785,201.5 1.19173785,201.5 Z M1.19173785,201.5" stroke="#4A4A4A" stroke-linecap="square" fill="#4A4A4A"></path>
+                <text id="35 cm" fill="#4A4A4A" font-family="Helvetica Neue" font-size="14" font-weight="normal" x="118" y="217.918032">
+                    <tspan>35 cm</tspan>
+                </text>
+            </g>
+            <g>
+                <path d="M2,0 C2,0 2,196.000038 275,196" id="Path 13" stroke="#979797" stroke-dasharray="2"></path>
+                <path d="M2,0 L2,196 L276,196 L276,0 L2,0 Z M2,0" id="Rectangle 8" stroke="#000000"></path>
+                <path d="M283.5,195.608 L283.5,0.392" id="Line" stroke="#4A4A4A" stroke-linecap="square" fill="#4A4A4A"></path>
+                <path id="Line decoration-1" d="M283.5,0.608003414 C282.45,4.38800339 281.55,7.62800338 280.5,11.4080034 C282.6,11.4080033 284.4,11.4080032 286.5,11.4080031 C285.45,7.62800321 284.55,4.3880033 283.5,0.608003414 C283.5,0.608003414 283.5,0.608003414 283.5,0.608003414 Z M283.5,0.608003414" stroke="#4A4A4A" stroke-linecap="square" fill="#4A4A4A"></path>
+                <path id="Line decoration-2" d="M283.5,194.808 C282.45,191.028 281.55,187.788 280.5,184.008 C282.6,184.008 284.4,184.008 286.5,184.008 C285.45,187.788 284.55,191.028 283.5,194.808 C283.5,194.808 283.5,194.808 283.5,194.808 Z M283.5,194.808" stroke="#4A4A4A" stroke-linecap="square" fill="#4A4A4A"></path>
+                <text id="25 cm" fill="#4A4A4A" transform="translate(292.500000, 99.547966) rotate(-270.000000) translate(-292.500000, -99.547966) " font-family="Helvetica Neue" font-size="14" font-weight="normal" x="270.75" y="107.465998">
+                    <tspan>25 cm</tspan>
+                </text>
+                <path d="M0.391737892,202.5 L275,202.5" id="Line" stroke="#4A4A4A" stroke-linecap="square" fill="#4A4A4A"></path>
+                <path id="Line decoration-1" d="M274.391724,202.5 C270.611724,201.45 267.371724,200.55 263.591724,199.5 C263.591724,201.6 263.591724,203.4 263.591724,205.5 C267.371724,204.45 270.611724,203.55 274.391724,202.5 C274.391724,202.5 274.391724,202.5 274.391724,202.5 Z M274.391724,202.5" stroke="#4A4A4A" stroke-linecap="square" fill="#4A4A4A"></path>
+                <path id="Line decoration-2" d="M1.19173785,202.5 C4.97173765,201.45 8.21173749,200.55 11.9917373,199.5 C11.9917373,201.6 11.9917373,203.4 11.9917373,205.5 C8.21173749,204.45 4.97173765,203.55 1.19173785,202.5 C1.19173785,202.5 1.19173785,202.5 1.19173785,202.5 Z M1.19173785,202.5" stroke="#4A4A4A" stroke-linecap="square" fill="#4A4A4A"></path>
+                <text id="35 cm" fill="#4A4A4A" font-family="Helvetica Neue" font-size="14" font-weight="normal" x="119" y="217.918032">
+                    <tspan>35 cm</tspan>
+                </text>
+            </g>
+        </g>
+        <path d="M154.999993,72 L154.999993,156" id="Line" stroke="#D70014" stroke-width="3" stroke-linecap="square"></path>
+        <path id="Line decoration-1" d="M154.999993,156 C156.049993,152.22 156.949993,148.98 157.999993,145.2 C155.899993,145.2 154.099993,145.2 151.999993,145.2 C153.049993,148.98 153.949993,152.22 154.999993,156 C154.999993,156 154.999993,156 154.999993,156 Z M154.999993,156" stroke="#D70014" stroke-width="3" stroke-linecap="square"></path>
+        <path id="Line decoration-2" d="M154.999993,72.8 C156.049993,76.58 156.949993,79.8200001 157.999993,83.6000001 C155.899993,83.6 154.099993,83.6 151.999993,83.5999999 C153.049993,79.8199999 153.949993,76.58 154.999993,72.8 C154.999993,72.8 154.999993,72.8 154.999993,72.8 Z M154.999993,72.8" stroke="#D70014" stroke-width="3" stroke-linecap="square"></path>
+        <text id="droit fil" fill="#D70014" transform="translate(166.500000, 112.500000) rotate(-270.000000) translate(-166.500000, -112.500000) " font-family="Helvetica" font-size="14" font-weight="normal" x="142" y="118">
+            <tspan>droit fil</tspan>
+        </text>
+    </g>
+</svg>
