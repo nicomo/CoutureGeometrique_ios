@@ -18,7 +18,7 @@
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
     if (self) {
         primaryLabel = [[UILabel alloc] initWithFrame:CGRectMake(10, 0, 246, 40)];
-        primaryLabel.font = [UIFont boldSystemFontOfSize:16];
+        primaryLabel.font = [UIFont boldSystemFontOfSize:13];
         primaryLabel.backgroundColor = [UIColor clearColor];
         [self.contentView addSubview:primaryLabel];
     }
@@ -29,15 +29,15 @@
 {
     [super setSelected:selected animated:animated];
 
-    if (selected) {
+    //if (selected) {
         self.primaryLabel.textColor = [UIColor whiteColor];
         self.primaryLabel.shadowColor = [UIColor colorWithRed:0.0 green:0.0 blue:0.0 alpha:0.25];
         self.primaryLabel.shadowOffset = CGSizeMake(0.0, -1.0);
-    } else {
+    /*} else {
         self.primaryLabel.textColor = [UIColor whiteColor];
         self.primaryLabel.shadowColor = [UIColor colorWithRed:0.0 green:0.0 blue:0.0 alpha:0.25];
         self.primaryLabel.shadowOffset = CGSizeMake(0.0, 1.0);
-    }
+    }*/
 }
 
 @end

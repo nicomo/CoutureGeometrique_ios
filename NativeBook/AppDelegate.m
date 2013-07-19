@@ -36,7 +36,7 @@ int current;
                 @"La ceinture obi origami",
                 @"Le bandeau vintage",
                 @"La broche pétales",
-                @"Une pochette pour ma tablette",
+                @"Une pochette pour tablette",
                 @"Et maintenant ?",
                 nil];
     

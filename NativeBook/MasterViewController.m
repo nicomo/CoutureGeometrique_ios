@@ -71,7 +71,7 @@ NSArray* chapters;
         cell = [[[UIMasterViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:MasterCellIdentifier] autorelease];
     }
 
-    cell.primaryLabel.text = [chapters.retain objectAtIndex:indexPath.row];
+    cell.primaryLabel.text = [[chapters.retain objectAtIndex:indexPath.row] uppercaseString];
 
     UIImageView* activeimgview = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"active.png"]];
     activeimgview.frame = CGRectMake(216, 0, 40, 40);
