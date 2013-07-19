@@ -15,6 +15,8 @@
 @property (nonatomic, strong) CDVViewController* cdvViewController;
 @property (nonatomic, strong) UIView* pullviewtop;
 @property (nonatomic, strong) UIView* pullviewbottom;
+@property (nonatomic, readwrite, strong) UILabel* chapternametop;
+@property (nonatomic, readwrite, strong) UILabel* chapternamebottom;
 @property (nonatomic) BOOL triggeredtop;
 @property (nonatomic) BOOL triggeredbottom;
 @property (nonatomic) BOOL dragging;

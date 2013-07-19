@@ -24,22 +24,24 @@ int current;
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     chapters = [NSArray arrayWithObjects:
-                     @"Introduction",
-                     @"Conseils Techniques",
-                     @"Le top à manches kimono",
-                     @"La cape cache-cœur",
-                     @"La robe « Y »",
-                     @"La jupe modulable à plis",
-                     @"Le chauffe-épaules",
-                     @"Le tablier girly",
-                     @"La ceinture obi origami",
-                     @"Le bandeau vintage",
-                     @"La broche pétales",
-                     @"Une pochette pour ma tablette",
-                     @"Et maintenant ?",
-                     nil];
+                @"Couture Géométrique",
+                @"Introduction",
+                @"Conseils Techniques",
+                @"Le top à manches kimono",
+                @"La cape cache-cœur",
+                @"La robe « Y »",
+                @"La jupe modulable à plis",
+                @"Le chauffe-épaules",
+                @"Le tablier girly",
+                @"La ceinture obi origami",
+                @"Le bandeau vintage",
+                @"La broche pétales",
+                @"Une pochette pour ma tablette",
+                @"Et maintenant ?",
+                nil];
     
     colors = [NSArray arrayWithObjects:
+              [UIColor clearColor],
               [UIColor colorWithRed:.80 green:.00 blue:.47 alpha:1],
               [UIColor colorWithRed:.00 green:.61 blue:.59 alpha:1],
               [UIColor colorWithRed:.42 green:.39 blue:.25 alpha:1],

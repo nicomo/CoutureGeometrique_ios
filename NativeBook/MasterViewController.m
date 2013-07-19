@@ -39,6 +39,9 @@ NSArray* chapters;
     self.tableView.showsVerticalScrollIndicator = NO;
     self.tableView.tableFooterView = [[[UIView alloc] init] autorelease];
     self.tableView.backgroundColor = [UIColor colorWithRed:.13 green:.13 blue:.13 alpha:1];
+
+    NSIndexPath *ip=[NSIndexPath indexPathForRow:0 inSection:0];
+    [self.tableView selectRowAtIndexPath:ip animated:YES  scrollPosition:UITableViewScrollPositionNone];
 }
 
 - (void)didReceiveMemoryWarning
@@ -50,7 +53,7 @@ NSArray* chapters;
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 13;
+    return [chapters count];
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -82,7 +85,9 @@ NSArray* chapters;
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    NSString* call = [NSString stringWithFormat:@"loadpage(%i)", indexPath.row+1];
+    int next = indexPath.row;
+    
+    NSString* call = [NSString stringWithFormat:@"loadpage(%i)", next];
     
     RootViewController* root = (RootViewController*) self.parentViewController;
     
@@ -106,7 +111,10 @@ NSArray* chapters;
         }];
     }
     
-    current = indexPath.row+1;
+    if (next > 0) root.chapternametop.text = [chapters objectAtIndex:next-1];
+    if (next < [chapters count]-1) root.chapternamebottom.text = [chapters objectAtIndex:next+1];
+    
+    current = next;
 }
 
 - (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath {

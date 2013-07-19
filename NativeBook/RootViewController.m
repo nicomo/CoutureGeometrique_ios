@@ -10,8 +10,9 @@
 #import <QuartzCore/QuartzCore.h>
 int current;
 
-@interface RootViewController () <UIScrollViewDelegate>
-
+@interface RootViewController () <UIScrollViewDelegate, UIGestureRecognizerDelegate>
+@property (nonatomic, readwrite, strong) UITapGestureRecognizer *tapGRtop;
+@property (nonatomic, readwrite, strong) UITapGestureRecognizer *tapGRbottom;
 @end
 
 @implementation RootViewController
@@ -22,6 +23,7 @@ int current;
 {
     [super viewDidLoad];
 
+    // CordovaView
     self.cdvViewController = [CDVViewController new];
     self.cdvViewController.view.frame = CGRectMake(0, 0, 768, 1004);
     self.cdvViewController.view.backgroundColor = [UIColor clearColor];
@@ -35,6 +37,7 @@ int current;
     self.cdvViewController.webView.scrollView.delegate = self;
     [self.view addSubview:self.cdvViewController.view];
     
+    // MasterView (menu)
     self.masterViewController = [[MasterViewController alloc] init];
     [self addChildViewController:self.masterViewController];
     [self.view addSubview:self.masterViewController.tableView];
@@ -52,12 +55,12 @@ int current;
     chapternumbertop.font = [UIFont boldSystemFontOfSize:14];
     chapternumbertop.backgroundColor = [UIColor clearColor];
     [self.pullviewtop addSubview:chapternumbertop];
-    UILabel* chapternametop = [[UILabel alloc] initWithFrame:CGRectMake(296, 40, 200, 20)];
-    if (current > 0) chapternametop.text = [chapters objectAtIndex:current-1];
-    chapternametop.textColor = [UIColor whiteColor];
-    chapternametop.font = [UIFont systemFontOfSize:14];
-    chapternametop.backgroundColor = [UIColor clearColor];
-    [self.pullviewtop addSubview:chapternametop];
+    self.chapternametop = [[UILabel alloc] initWithFrame:CGRectMake(296, 40, 200, 20)];
+    if (current > 0) self.chapternametop.text = [chapters objectAtIndex:current-1];
+    self.chapternametop.textColor = [UIColor whiteColor];
+    self.chapternametop.font = [UIFont systemFontOfSize:14];
+    self.chapternametop.backgroundColor = [UIColor clearColor];
+    [self.pullviewtop addSubview:self.chapternametop];
     [self.cdvViewController.webView addSubview:self.pullviewtop];
     
     // Bottom pull view
@@ -69,25 +72,35 @@ int current;
     tapimgviewbottom.frame = CGRectMake(236, 20, 40, 40);
     [self.pullviewbottom addSubview:tapimgviewbottom];
     UILabel* chapternumberbottom = [[UILabel alloc] initWithFrame:CGRectMake(296, 20, 200, 20)];
-    chapternumberbottom.text = @"Passer au chapitre précédant";
+    chapternumberbottom.text = @"Passer au chapitre suivant";
     chapternumberbottom.textColor = [UIColor grayColor];
     chapternumberbottom.font = [UIFont boldSystemFontOfSize:14];
     chapternumberbottom.backgroundColor = [UIColor clearColor];
     [self.pullviewbottom addSubview:chapternumberbottom];
-    UILabel* chapternamebottom = [[UILabel alloc] initWithFrame:CGRectMake(296, 40, 200, 20)];
-    if (current <= 13) chapternamebottom.text = [chapters objectAtIndex:current+1];
-    chapternamebottom.textColor = [UIColor whiteColor];
-    chapternamebottom.font = [UIFont systemFontOfSize:14];
-    chapternamebottom.backgroundColor = [UIColor clearColor];
-    [self.pullviewbottom addSubview:chapternamebottom];
+    self.chapternamebottom = [[UILabel alloc] initWithFrame:CGRectMake(296, 40, 200, 20)];
+    if (current < [chapters count] - 1) self.chapternamebottom.text = [chapters objectAtIndex:current+1];
+    self.chapternamebottom.textColor = [UIColor whiteColor];
+    self.chapternamebottom.font = [UIFont systemFontOfSize:14];
+    self.chapternamebottom.backgroundColor = [UIColor clearColor];
+    [self.pullviewbottom addSubview:self.chapternamebottom];
     [self.cdvViewController.webView addSubview:self.pullviewbottom];
+    
+    self.tapGRtop = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(handleGesture:)];
+    self.tapGRtop.delegate = self;
+    [self.pullviewtop addGestureRecognizer:self.tapGRtop];
+    [self.tapGRtop release];
+    
+    self.tapGRbottom = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(handleGesture:)];
+    self.tapGRbottom.delegate = self;
+    [self.pullviewbottom addGestureRecognizer:self.tapGRbottom];
+    [self.tapGRbottom release];
+    
+    self.view.backgroundColor = [UIColor colorWithRed:.44 green:.46 blue:.49 alpha:1];
+    self.view.autoresizesSubviews = YES;
 
     self.triggeredtop = NO;
     self.triggeredbottom = NO;
     self.dragging = NO;
-    
-    self.view.backgroundColor = [UIColor colorWithRed:.44 green:.46 blue:.49 alpha:1];
-    self.view.autoresizesSubviews = YES;
 }
 
 - (void)didReceiveMemoryWarning
@@ -122,7 +135,7 @@ int current;
             }];
         }
     }
-    if (current <= 13) {
+    if (current < [chapters count] - 1) {
         float frh = scrollView.frame.size.height;
         if (self.triggeredbottom && scrollView.contentOffset.y + frh <= scrollView.contentSize.height + 80 && !self.dragging) {
             scrollView.contentOffset = CGPointMake(0, scrollView.contentSize.height - frh + 80);
@@ -148,6 +161,41 @@ int current;
 
 - (void)scrollViewDidEndDragging:(UIScrollView *)scrollView willDecelerate:(BOOL)decelerate {
     self.dragging = NO;
+}
+
+- (void)handleGesture:(UITapGestureRecognizer *)gestureRecognizer
+{
+    int next = self.triggeredbottom ? current + 1 : current -1;
+    
+    NSString* call = [NSString stringWithFormat:@"loadpage(%i)", next];
+    
+    [self.cdvViewController.webView stringByEvaluatingJavaScriptFromString:call];
+    
+    if (self.triggeredtop) {
+        self.triggeredtop = NO;
+        [UIView animateWithDuration:0.15 animations:^{
+            CGRect fr = self.pullviewtop.frame;
+            fr.origin.y = -80;
+            self.pullviewtop.frame = fr;
+        }];
+    }
+    
+    if (self.triggeredbottom) {
+        self.triggeredbottom = NO;
+        [UIView animateWithDuration:0.15 animations:^{
+            CGRect fr = self.pullviewbottom.frame;
+            fr.origin.y = self.cdvViewController.webView.scrollView.frame.size.height;
+            self.pullviewbottom.frame = fr;
+        }];
+    }
+
+    if (next > 0) self.chapternametop.text = [chapters objectAtIndex:next-1];
+    if (next < [chapters count]-1) self.chapternamebottom.text = [chapters objectAtIndex:next+1];
+    
+    NSIndexPath *ip=[NSIndexPath indexPathForRow:next inSection:0];
+    [self.masterViewController.tableView selectRowAtIndexPath:ip animated:YES scrollPosition:UITableViewScrollPositionNone];
+    
+    current = next;
 }
 
 @end
