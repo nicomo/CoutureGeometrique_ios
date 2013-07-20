@@ -37,6 +37,8 @@
 		2010FDC1179762230092C107 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2010FDC0179762230092C107 /* ImageIO.framework */; };
 		2010FDC3179762400092C107 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2010FDC2179762400092C107 /* AssetsLibrary.framework */; };
 		2010FDC5179763A10092C107 /* www in Resources */ = {isa = PBXBuildFile; fileRef = 2010FDC4179763A10092C107 /* www */; };
+		20166511179B3820002917F5 /* Vdnbrcupyyaykuzyblvvwuiwntx.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2016650F179B37F9002917F5 /* Vdnbrcupyyaykuzyblvvwuiwntx.ttf */; };
+		207A4CE5179B328800727C39 /* Yrlxpowcjmaxlpvlfuedtlaekim.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 207A4CE1179B27BE00727C39 /* Yrlxpowcjmaxlpvlfuedtlaekim.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,7 +90,9 @@
 		2010FDC0179762230092C107 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
 		2010FDC2179762400092C107 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
 		2010FDC4179763A10092C107 /* www */ = {isa = PBXFileReference; lastKnownFileType = folder; path = www; sourceTree = "<group>"; };
+		2016650F179B37F9002917F5 /* Vdnbrcupyyaykuzyblvvwuiwntx.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Vdnbrcupyyaykuzyblvvwuiwntx.ttf; sourceTree = "<group>"; };
 		205B84F61798038500CC10E2 /* CordovaLib.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CordovaLib.xcodeproj; path = CordovaLib/CordovaLib.xcodeproj; sourceTree = "<group>"; };
+		207A4CE1179B27BE00727C39 /* Yrlxpowcjmaxlpvlfuedtlaekim.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Yrlxpowcjmaxlpvlfuedtlaekim.ttf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -176,6 +180,8 @@
 				2010FD0E179746BE0092C107 /* tap@2x.png */,
 				2010FD13179759B70092C107 /* active@2x.png */,
 				2010FD1617975D120092C107 /* config.xml */,
+				2016650F179B37F9002917F5 /* Vdnbrcupyyaykuzyblvvwuiwntx.ttf */,
+				207A4CE1179B27BE00727C39 /* Yrlxpowcjmaxlpvlfuedtlaekim.ttf */,
 				2010FCE91797138B0092C107 /* Supporting Files */,
 			);
 			path = NativeBook;
@@ -270,6 +276,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				20166511179B3820002917F5 /* Vdnbrcupyyaykuzyblvvwuiwntx.ttf in Resources */,
+				207A4CE5179B328800727C39 /* Yrlxpowcjmaxlpvlfuedtlaekim.ttf in Resources */,
 				2010FCED1797138B0092C107 /* InfoPlist.strings in Resources */,
 				2010FCF51797138B0092C107 /* Default.png in Resources */,
 				2010FCF71797138B0092C107 /* Default@2x.png in Resources */,
