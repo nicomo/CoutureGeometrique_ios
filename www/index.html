@@ -11,7 +11,8 @@
     <script src="framework/js/cordova-2.7.0.js"></script>
     <script src="framework/js/PinterestPlugin.js"></script>
     <script src="framework/js/jquery-1.8.3.min.js"></script>
-    <script src="framework/js/bootstrap.min.js"></script>
+    <script src="framework/js/jquery.css3caching.js"></script>
+    <!--<script src="framework/js/bootstrap.min.js"></script>-->
     <script src="framework/js/jquery.transit.min.js"></script>
     <script src="framework/js/jquery.touchSwipe.min.js"></script>
     <script src="framework/js/jquery.slideshow.js"></script>
@@ -47,6 +48,8 @@
           }
         });
       }
+
+      $.preload.images();
 
       $('<section>').load('0.html', function() {
         $('.wrap').append('<section id="chapter0">'+$(this).html()+'</section>');
