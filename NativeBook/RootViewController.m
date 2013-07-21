@@ -33,7 +33,8 @@ int current;
     
     // CordovaView
     self.cdvViewController = [CDVViewController new];
-    self.cdvViewController.view.frame = CGRectMake(0, 0, 768, 1004);
+    self.cdvViewController.view.frame = CGRectMake(0, 0, 778, 1004);
+    self.cdvViewController.view.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleLeftMargin;
     self.cdvViewController.view.backgroundColor = [UIColor colorWithRed:.44 green:.46 blue:.49 alpha:1];
     self.cdvViewController.view.layer.masksToBounds = NO;
     self.cdvViewController.view.layer.shadowOffset = CGSizeMake(0, 0);
@@ -43,7 +44,6 @@ int current;
     self.cdvViewController.view.layer.rasterizationScale = [UIScreen mainScreen].scale;
     self.cdvViewController.view.layer.shadowPath = [UIBezierPath bezierPathWithRect:self.cdvViewController.view.bounds].CGPath;
     self.cdvViewController.webView.backgroundColor = [UIColor clearColor];
-    self.cdvViewController.webView.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleLeftMargin;
     for (UIView *view in [[[self.cdvViewController.webView subviews] objectAtIndex:0] subviews]) {
         if ([view isKindOfClass:[UIImageView class]]) {
             view.hidden = YES;
@@ -51,6 +51,8 @@ int current;
     }
     self.cdvViewController.webView.scrollView.delegate = self;
     [self.view addSubview:self.cdvViewController.view];
+    
+        //[self.view bringSubviewToFront:self.masterViewController.tableView];
 
     // Top pull view
     self.pullviewtop = [[UIView alloc] initWithFrame:CGRectMake(0, -80, 768, 80)];
