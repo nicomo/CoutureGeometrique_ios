@@ -89,6 +89,9 @@ int current;
     self.burgerview = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"burger.png"]];
     self.burgerview.frame = CGRectMake(10, 10, 55, 55);
     self.burgerview.userInteractionEnabled = YES;
+    if (UIInterfaceOrientationIsLandscape([[UIApplication sharedApplication] statusBarOrientation])){
+        self.burgerview.hidden = YES;
+    }
     [self.cdvViewController.webView addSubview:self.burgerview];
     [self.cdvViewController.webView bringSubviewToFront:self.burgerview];
     
@@ -263,9 +266,37 @@ int current;
         if (self.triggeredburger) {
             self.masterViewController.tableView.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleRightMargin;
             self.cdvViewController.view.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleRightMargin;
+            self.cdvViewController.webView.scrollView.userInteractionEnabled = YES;
         } else {
             self.masterViewController.tableView.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleLeftMargin;
             self.cdvViewController.view.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleLeftMargin;
+        }
+    }
+    
+    [UIView animateWithDuration:0.35 animations:^{
+        if (self.triggeredtop) {
+            self.triggeredtop = NO;
+            CGRect fr3 = self.pullviewtop.frame;
+            fr3.origin.y = -80;
+            self.pullviewtop.frame = fr3;
+        }
+        if (self.triggeredbottom) {
+            self.triggeredbottom = NO;
+            CGRect fr3 = self.pullviewbottom.frame;
+            fr3.origin.y = self.cdvViewController.webView.scrollView.frame.size.height;
+            self.pullviewbottom.frame = fr3;
+        }
+    }];
+}
+
+- (void)didRotateFromInterfaceOrientation:(UIInterfaceOrientation)fromInterfaceOrientation {
+    if (fromInterfaceOrientation == UIInterfaceOrientationPortrait ||
+        fromInterfaceOrientation == UIInterfaceOrientationPortraitUpsideDown) {
+        if (self.triggeredburger) {
+            self.masterViewController.tableView.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleLeftMargin;
+            self.cdvViewController.view.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleLeftMargin;
+            self.cdvViewController.webView.scrollView.userInteractionEnabled = YES;
+            self.triggeredburger = NO;
         }
     }
 }
