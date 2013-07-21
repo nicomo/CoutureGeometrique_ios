@@ -114,6 +114,19 @@ NSArray* chapters;
     if (next > 0) root.chapternametop.text = [chapters objectAtIndex:next-1];
     if (next < [chapters count]-1) root.chapternamebottom.text = [chapters objectAtIndex:next+1];
     
+    if (root.triggeredburger) {
+        [UIView animateWithDuration:0.35 animations:^{
+            CGRect fr = root.masterViewController.tableView.frame;
+            fr.origin.x = -256;
+            root.masterViewController.tableView.frame = fr;
+            CGRect fr2 = root.cdvViewController.view.frame;
+            fr2.origin.x = 0;
+            root.cdvViewController.view.frame = fr2;
+            root.cdvViewController.webView.scrollView.userInteractionEnabled = YES;
+            root.triggeredburger = NO;
+        }];
+    }
+    
     current = next;
 }
 

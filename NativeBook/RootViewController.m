@@ -19,7 +19,7 @@ int current;
 
 @implementation RootViewController
 
-@synthesize masterViewController, cdvViewController, triggeredtop, triggeredbottom;
+@synthesize masterViewController, cdvViewController, triggeredtop, triggeredbottom, triggeredburger;
 
 - (void)viewDidLoad
 {
