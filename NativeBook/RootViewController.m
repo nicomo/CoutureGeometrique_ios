@@ -201,6 +201,12 @@ int current;
     
     [self.cdvViewController.webView stringByEvaluatingJavaScriptFromString:call];
     
+    [UIView animateWithDuration:0.15 animations:^{
+        CGRect fr = self.activeview.frame;
+        fr.origin.y = 40*next;
+        self.activeview.frame = fr;
+    }];
+    
     if (self.triggeredtop) {
         self.triggeredtop = NO;
         [UIView animateWithDuration:0.15 animations:^{
