@@ -13,6 +13,7 @@ int current;
 @interface RootViewController () <UIScrollViewDelegate, UIGestureRecognizerDelegate>
 @property (nonatomic, readwrite, strong) UITapGestureRecognizer *tapGRtop;
 @property (nonatomic, readwrite, strong) UITapGestureRecognizer *tapGRbottom;
+@property (nonatomic, strong) UIImageView* burgerview;
 @end
 
 @implementation RootViewController
@@ -64,7 +65,6 @@ int current;
     [self.cdvViewController.webView addSubview:self.pullviewtop];
     
     // Bottom pull view
-    NSLog(@"%f",self.cdvViewController.webView.scrollView.contentSize.height);
     self.pullviewbottom = [[UIView alloc] initWithFrame:CGRectMake(0, self.cdvViewController.webView.scrollView.frame.size.height, 768, 80)];
     self.pullviewbottom.autoresizingMask = UIViewAutoresizingFlexibleTopMargin;
     self.pullviewbottom.backgroundColor = [UIColor colorWithRed:0 green:0 blue:0 alpha:0.75];
@@ -94,6 +94,10 @@ int current;
     self.tapGRbottom.delegate = self;
     [self.pullviewbottom addGestureRecognizer:self.tapGRbottom];
     [self.tapGRbottom release];
+    
+    self.burgerview = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"burger.png"]];
+    self.burgerview.frame = CGRectMake(10, 10, 55, 55);
+    [self.cdvViewController.webView addSubview:self.burgerview];
     
     self.view.backgroundColor = [UIColor colorWithRed:.44 green:.46 blue:.49 alpha:1];
     self.view.autoresizesSubviews = YES;
@@ -196,6 +200,17 @@ int current;
     [self.masterViewController.tableView selectRowAtIndexPath:ip animated:YES scrollPosition:UITableViewScrollPositionNone];
     
     current = next;
+}
+
+- (void)willRotateToInterfaceOrientation:(UIInterfaceOrientation)toOrientation duration:(NSTimeInterval)duration
+{
+    if (toOrientation == UIInterfaceOrientationPortrait ||
+        toOrientation == UIInterfaceOrientationPortraitUpsideDown) {
+        [self.burgerview setHidden:NO];
+    } else if (toOrientation == UIInterfaceOrientationLandscapeLeft ||
+        toOrientation == UIInterfaceOrientationLandscapeRight) {
+        [self.burgerview setHidden:YES];
+    }
 }
 
 @end

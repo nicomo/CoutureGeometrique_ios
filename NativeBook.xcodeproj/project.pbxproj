@@ -38,6 +38,7 @@
 		2010FDC3179762400092C107 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2010FDC2179762400092C107 /* AssetsLibrary.framework */; };
 		2010FDC5179763A10092C107 /* www in Resources */ = {isa = PBXBuildFile; fileRef = 2010FDC4179763A10092C107 /* www */; };
 		20166511179B3820002917F5 /* Vdnbrcupyyaykuzyblvvwuiwntx.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2016650F179B37F9002917F5 /* Vdnbrcupyyaykuzyblvvwuiwntx.ttf */; };
+		2041A1D5179C16F300ED7610 /* burger@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2041A1D4179C16F300ED7610 /* burger@2x.png */; };
 		207A4CE5179B328800727C39 /* Yrlxpowcjmaxlpvlfuedtlaekim.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 207A4CE1179B27BE00727C39 /* Yrlxpowcjmaxlpvlfuedtlaekim.ttf */; };
 /* End PBXBuildFile section */
 
@@ -91,6 +92,7 @@
 		2010FDC2179762400092C107 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
 		2010FDC4179763A10092C107 /* www */ = {isa = PBXFileReference; lastKnownFileType = folder; path = www; sourceTree = "<group>"; };
 		2016650F179B37F9002917F5 /* Vdnbrcupyyaykuzyblvvwuiwntx.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Vdnbrcupyyaykuzyblvvwuiwntx.ttf; sourceTree = "<group>"; };
+		2041A1D4179C16F300ED7610 /* burger@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "burger@2x.png"; sourceTree = "<group>"; };
 		205B84F61798038500CC10E2 /* CordovaLib.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CordovaLib.xcodeproj; path = CordovaLib/CordovaLib.xcodeproj; sourceTree = "<group>"; };
 		207A4CE1179B27BE00727C39 /* Yrlxpowcjmaxlpvlfuedtlaekim.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Yrlxpowcjmaxlpvlfuedtlaekim.ttf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -179,6 +181,7 @@
 				2010FD0C1797159D0092C107 /* UIMasterViewCell.m */,
 				2010FD0E179746BE0092C107 /* tap@2x.png */,
 				2010FD13179759B70092C107 /* active@2x.png */,
+				2041A1D4179C16F300ED7610 /* burger@2x.png */,
 				2010FD1617975D120092C107 /* config.xml */,
 				2016650F179B37F9002917F5 /* Vdnbrcupyyaykuzyblvvwuiwntx.ttf */,
 				207A4CE1179B27BE00727C39 /* Yrlxpowcjmaxlpvlfuedtlaekim.ttf */,
@@ -287,6 +290,7 @@
 				2010FD14179759B70092C107 /* active@2x.png in Resources */,
 				2010FD1717975D120092C107 /* config.xml in Resources */,
 				2010FDC5179763A10092C107 /* www in Resources */,
+				2041A1D5179C16F300ED7610 /* burger@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
