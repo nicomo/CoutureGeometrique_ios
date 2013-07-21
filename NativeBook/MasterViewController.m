@@ -72,11 +72,8 @@ NSArray* chapters;
     }
 
     cell.primaryLabel.text = [[chapters.retain objectAtIndex:indexPath.row] uppercaseString];
-
-    UIImageView* activeimgview = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"active.png"]];
-    activeimgview.frame = CGRectMake(216, 0, 40, 40);
-    cell.selectedBackgroundView = activeimgview;
-    [activeimgview release];
+    
+    cell.selectionStyle = UITableViewCellSelectionStyleNone;
     
     return cell;
 }
@@ -92,6 +89,12 @@ NSArray* chapters;
     RootViewController* root = (RootViewController*) self.parentViewController;
     
     [root.cdvViewController.webView stringByEvaluatingJavaScriptFromString:call];
+    
+    [UIView animateWithDuration:0.15 animations:^{
+        CGRect fr = root.activeview.frame;
+        fr.origin.y = 40*next;
+        root.activeview.frame = fr;
+    }];
 
     if (root.triggeredtop) {
         root.triggeredtop = NO;

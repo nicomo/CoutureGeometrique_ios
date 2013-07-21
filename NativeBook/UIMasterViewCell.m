@@ -20,24 +20,12 @@
         primaryLabel = [[UILabel alloc] initWithFrame:CGRectMake(10, 0, 246, 40)];
         primaryLabel.font = [UIFont fontWithName:@"Vdnbrcupyyaykuzyblvvwuiwntx" size:14];
         primaryLabel.backgroundColor = [UIColor clearColor];
+        primaryLabel.textColor = [UIColor whiteColor];
+        primaryLabel.shadowColor = [UIColor colorWithRed:0.0 green:0.0 blue:0.0 alpha:0.25];
+        primaryLabel.shadowOffset = CGSizeMake(0.0, -1.0);
         [self.contentView addSubview:primaryLabel];
     }
     return self;
-}
-
-- (void)setSelected:(BOOL)selected animated:(BOOL)animated
-{
-    [super setSelected:selected animated:animated];
-
-    //if (selected) {
-        self.primaryLabel.textColor = [UIColor whiteColor];
-        self.primaryLabel.shadowColor = [UIColor colorWithRed:0.0 green:0.0 blue:0.0 alpha:0.25];
-        self.primaryLabel.shadowOffset = CGSizeMake(0.0, -1.0);
-    /*} else {
-        self.primaryLabel.textColor = [UIColor whiteColor];
-        self.primaryLabel.shadowColor = [UIColor colorWithRed:0.0 green:0.0 blue:0.0 alpha:0.25];
-        self.primaryLabel.shadowOffset = CGSizeMake(0.0, 1.0);
-    }*/
 }
 
 @end

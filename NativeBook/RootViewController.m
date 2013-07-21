@@ -19,7 +19,7 @@ int current;
 
 @implementation RootViewController
 
-@synthesize masterViewController, cdvViewController, triggeredtop, triggeredbottom, triggeredburger;
+@synthesize masterViewController, cdvViewController, triggeredtop, triggeredbottom, triggeredburger, activeview;
 
 - (void)viewDidLoad
 {
@@ -92,7 +92,8 @@ int current;
     self.chapternamebottom.backgroundColor = [UIColor clearColor];
     [self.pullviewbottom addSubview:self.chapternamebottom];
     [self.cdvViewController.webView addSubview:self.pullviewbottom];
-
+    
+    // Burger view
     self.burgerview = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"burger.png"]];
     self.burgerview.frame = CGRectMake(10, 10, 55, 55);
     self.burgerview.userInteractionEnabled = YES;
@@ -101,6 +102,12 @@ int current;
     }
     [self.cdvViewController.webView addSubview:self.burgerview];
     [self.cdvViewController.webView bringSubviewToFront:self.burgerview];
+    
+    // Active view
+    self.activeview = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"active.png"]];
+    self.activeview.frame = CGRectMake(-40, 40*current, 40, 40);
+    [self.cdvViewController.webView addSubview:self.activeview];
+    [self.cdvViewController.webView bringSubviewToFront:self.activeview];
     
     self.tapGRtop = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(handleGesture:)];
     self.tapGRtop.delegate = self;
