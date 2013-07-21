@@ -11,9 +11,10 @@
 int current;
 
 @interface RootViewController () <UIScrollViewDelegate, UIGestureRecognizerDelegate>
-@property (nonatomic, readwrite, strong) UITapGestureRecognizer *tapGRtop;
-@property (nonatomic, readwrite, strong) UITapGestureRecognizer *tapGRbottom;
 @property (nonatomic, strong) UIImageView* burgerview;
+@property (nonatomic, readwrite, strong) UITapGestureRecognizer* tapGRtop;
+@property (nonatomic, readwrite, strong) UITapGestureRecognizer* tapGRbottom;
+@property (nonatomic, readwrite, strong) UITapGestureRecognizer* tapGRburger;
 @end
 
 @implementation RootViewController
@@ -84,6 +85,12 @@ int current;
     self.chapternamebottom.backgroundColor = [UIColor clearColor];
     [self.pullviewbottom addSubview:self.chapternamebottom];
     [self.cdvViewController.webView addSubview:self.pullviewbottom];
+
+    self.burgerview = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"burger.png"]];
+    self.burgerview.frame = CGRectMake(10, 10, 55, 55);
+    self.burgerview.userInteractionEnabled = YES;
+    [self.cdvViewController.webView addSubview:self.burgerview];
+    [self.cdvViewController.webView bringSubviewToFront:self.burgerview];
     
     self.tapGRtop = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(handleGesture:)];
     self.tapGRtop.delegate = self;
@@ -95,15 +102,17 @@ int current;
     [self.pullviewbottom addGestureRecognizer:self.tapGRbottom];
     [self.tapGRbottom release];
     
-    self.burgerview = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"burger.png"]];
-    self.burgerview.frame = CGRectMake(10, 10, 55, 55);
-    [self.cdvViewController.webView addSubview:self.burgerview];
-    
+    self.tapGRburger = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(handleTapOnBurger:)];
+    self.tapGRburger.delegate = self;
+    [self.burgerview addGestureRecognizer:self.tapGRburger];
+    [self.tapGRburger release];
+
     self.view.backgroundColor = [UIColor colorWithRed:.44 green:.46 blue:.49 alpha:1];
     self.view.autoresizesSubviews = YES;
 
     self.triggeredtop = NO;
     self.triggeredbottom = NO;
+    self.triggeredburger = NO;
     self.dragging = NO;
 }
 
@@ -202,6 +211,47 @@ int current;
     current = next;
 }
 
+- (void)handleTapOnBurger:(UITapGestureRecognizer *)gestureRecognizer
+{
+    if (! self.triggeredburger) {
+        [UIView animateWithDuration:0.35 animations:^{
+            CGRect fr = self.masterViewController.tableView.frame;
+            fr.origin.x = 0;
+            self.masterViewController.tableView.frame = fr;
+            CGRect fr2 = self.cdvViewController.view.frame;
+            fr2.origin.x = 256;
+            self.cdvViewController.view.frame = fr2;
+            self.cdvViewController.webView.scrollView.userInteractionEnabled = NO;
+            self.triggeredburger = YES;
+            if (self.triggeredtop) {
+                self.triggeredtop = NO;
+                CGRect fr3 = self.pullviewtop.frame;
+                fr3.origin.y = -80;
+                self.pullviewtop.frame = fr3;
+                [self.cdvViewController.webView.scrollView setContentOffset:CGPointMake(0, 0) animated:YES];
+            }
+            if (self.triggeredbottom) {
+                self.triggeredbottom = NO;
+                CGRect fr3 = self.pullviewbottom.frame;
+                fr3.origin.y = self.cdvViewController.webView.scrollView.frame.size.height;
+                self.pullviewbottom.frame = fr3;
+                [self.cdvViewController.webView.scrollView setContentOffset:CGPointMake(0, self.cdvViewController.webView.scrollView.contentOffset.y-80) animated:YES];
+            }
+        }];
+    } else {
+        [UIView animateWithDuration:0.35 animations:^{
+            CGRect fr = self.masterViewController.tableView.frame;
+            fr.origin.x = -256;
+            self.masterViewController.tableView.frame = fr;
+            CGRect fr2 = self.cdvViewController.view.frame;
+            fr2.origin.x = 0;
+            self.cdvViewController.view.frame = fr2;
+            self.cdvViewController.webView.scrollView.userInteractionEnabled = YES;
+            self.triggeredburger = NO;
+        }];
+    }
+}
+
 - (void)willRotateToInterfaceOrientation:(UIInterfaceOrientation)toOrientation duration:(NSTimeInterval)duration
 {
     if (toOrientation == UIInterfaceOrientationPortrait ||
@@ -210,6 +260,13 @@ int current;
     } else if (toOrientation == UIInterfaceOrientationLandscapeLeft ||
         toOrientation == UIInterfaceOrientationLandscapeRight) {
         [self.burgerview setHidden:YES];
+        if (self.triggeredburger) {
+            self.masterViewController.tableView.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleRightMargin;
+            self.cdvViewController.view.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleRightMargin;
+        } else {
+            self.masterViewController.tableView.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleLeftMargin;
+            self.cdvViewController.view.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleLeftMargin;
+        }
     }
 }
 

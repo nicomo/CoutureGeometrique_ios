@@ -19,5 +19,6 @@
 @property (nonatomic, readwrite, strong) UILabel* chapternamebottom;
 @property (nonatomic) BOOL triggeredtop;
 @property (nonatomic) BOOL triggeredbottom;
+@property (nonatomic) BOOL triggeredburger;
 @property (nonatomic) BOOL dragging;
 @end
