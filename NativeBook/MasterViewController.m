@@ -32,8 +32,8 @@ NSArray* chapters;
 {
     [super viewDidLoad];
 
-    self.tableView.frame = CGRectMake(-256, 0, 256, 1004);
-    self.tableView.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleLeftMargin;
+    self.tableView.frame = CGRectMake(0, 0, 256, 1004);
+    self.tableView.autoresizingMask = UIViewAutoresizingFlexibleHeight;
     
     self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     self.tableView.showsVerticalScrollIndicator = NO;
@@ -116,9 +116,6 @@ NSArray* chapters;
     
     if (root.triggeredburger) {
         [UIView animateWithDuration:0.35 animations:^{
-            CGRect fr = root.masterViewController.tableView.frame;
-            fr.origin.x = -256;
-            root.masterViewController.tableView.frame = fr;
             CGRect fr2 = root.cdvViewController.view.frame;
             fr2.origin.x = 0;
             root.cdvViewController.view.frame = fr2;

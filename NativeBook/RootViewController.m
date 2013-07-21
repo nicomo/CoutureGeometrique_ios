@@ -24,11 +24,24 @@ int current;
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-
+    
+    // MasterView (menu)
+    self.masterViewController = [[MasterViewController alloc] init];
+    [self addChildViewController:self.masterViewController];
+    [self.view addSubview:self.masterViewController.tableView];
+    [self.masterViewController didMoveToParentViewController:self];
+    
     // CordovaView
     self.cdvViewController = [CDVViewController new];
     self.cdvViewController.view.frame = CGRectMake(0, 0, 768, 1004);
-    self.cdvViewController.view.backgroundColor = [UIColor clearColor];
+    self.cdvViewController.view.backgroundColor = [UIColor colorWithRed:.44 green:.46 blue:.49 alpha:1];
+    self.cdvViewController.view.layer.masksToBounds = NO;
+    self.cdvViewController.view.layer.shadowOffset = CGSizeMake(0, 0);
+    self.cdvViewController.view.layer.shadowRadius = 10;
+    self.cdvViewController.view.layer.shadowOpacity = 0.5;
+    self.cdvViewController.view.layer.shouldRasterize = YES;
+    self.cdvViewController.view.layer.rasterizationScale = [UIScreen mainScreen].scale;
+    self.cdvViewController.view.layer.shadowPath = [UIBezierPath bezierPathWithRect:self.cdvViewController.view.bounds].CGPath;
     self.cdvViewController.webView.backgroundColor = [UIColor clearColor];
     self.cdvViewController.webView.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleLeftMargin;
     for (UIView *view in [[[self.cdvViewController.webView subviews] objectAtIndex:0] subviews]) {
@@ -38,13 +51,7 @@ int current;
     }
     self.cdvViewController.webView.scrollView.delegate = self;
     [self.view addSubview:self.cdvViewController.view];
-    
-    // MasterView (menu)
-    self.masterViewController = [[MasterViewController alloc] init];
-    [self addChildViewController:self.masterViewController];
-    [self.view addSubview:self.masterViewController.tableView];
-    [self.masterViewController didMoveToParentViewController:self];
-    
+
     // Top pull view
     self.pullviewtop = [[UIView alloc] initWithFrame:CGRectMake(0, -80, 768, 80)];
     self.pullviewtop.backgroundColor = [UIColor colorWithRed:0 green:0 blue:0 alpha:0.75];
@@ -218,9 +225,6 @@ int current;
 {
     if (! self.triggeredburger) {
         [UIView animateWithDuration:0.35 animations:^{
-            CGRect fr = self.masterViewController.tableView.frame;
-            fr.origin.x = 0;
-            self.masterViewController.tableView.frame = fr;
             CGRect fr2 = self.cdvViewController.view.frame;
             fr2.origin.x = 256;
             self.cdvViewController.view.frame = fr2;
@@ -243,9 +247,6 @@ int current;
         }];
     } else {
         [UIView animateWithDuration:0.35 animations:^{
-            CGRect fr = self.masterViewController.tableView.frame;
-            fr.origin.x = -256;
-            self.masterViewController.tableView.frame = fr;
             CGRect fr2 = self.cdvViewController.view.frame;
             fr2.origin.x = 0;
             self.cdvViewController.view.frame = fr2;
@@ -264,11 +265,9 @@ int current;
         toOrientation == UIInterfaceOrientationLandscapeRight) {
         [self.burgerview setHidden:YES];
         if (self.triggeredburger) {
-            self.masterViewController.tableView.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleRightMargin;
             self.cdvViewController.view.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleRightMargin;
             self.cdvViewController.webView.scrollView.userInteractionEnabled = YES;
         } else {
-            self.masterViewController.tableView.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleLeftMargin;
             self.cdvViewController.view.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleLeftMargin;
         }
     }
@@ -293,7 +292,6 @@ int current;
     if (fromInterfaceOrientation == UIInterfaceOrientationPortrait ||
         fromInterfaceOrientation == UIInterfaceOrientationPortraitUpsideDown) {
         if (self.triggeredburger) {
-            self.masterViewController.tableView.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleLeftMargin;
             self.cdvViewController.view.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleLeftMargin;
             self.cdvViewController.webView.scrollView.userInteractionEnabled = YES;
             self.triggeredburger = NO;
