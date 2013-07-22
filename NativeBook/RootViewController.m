@@ -97,7 +97,7 @@ int current;
     
     // Burger view
     self.burgerview = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"burger.png"]];
-    self.burgerview.frame = CGRectMake(10, 10, 55, 55);
+    self.burgerview.frame = CGRectMake(0, 0, 75, 75);
     self.burgerview.userInteractionEnabled = YES;
     if (UIInterfaceOrientationIsLandscape([[UIApplication sharedApplication] statusBarOrientation])){
         self.burgerview.hidden = YES;
