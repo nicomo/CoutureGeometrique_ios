@@ -13,9 +13,6 @@
 		2010FCED1797138B0092C107 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2010FCEB1797138B0092C107 /* InfoPlist.strings */; };
 		2010FCEF1797138B0092C107 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2010FCEE1797138B0092C107 /* main.m */; };
 		2010FCF31797138B0092C107 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2010FCF21797138B0092C107 /* AppDelegate.m */; };
-		2010FCF51797138B0092C107 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 2010FCF41797138B0092C107 /* Default.png */; };
-		2010FCF71797138B0092C107 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2010FCF61797138B0092C107 /* Default@2x.png */; };
-		2010FCF91797138B0092C107 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2010FCF81797138B0092C107 /* Default-568h@2x.png */; };
 		2010FCFF1797138B0092C107 /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2010FCFD1797138B0092C107 /* RootViewController.xib */; };
 		2010FD091797156B0092C107 /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2010FD061797141A0092C107 /* MasterViewController.m */; };
 		2010FD0A1797156B0092C107 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2010FD081797141A0092C107 /* RootViewController.m */; };
@@ -40,6 +37,13 @@
 		20166511179B3820002917F5 /* Vdnbrcupyyaykuzyblvvwuiwntx.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2016650F179B37F9002917F5 /* Vdnbrcupyyaykuzyblvvwuiwntx.ttf */; };
 		2041A1D5179C16F300ED7610 /* burger@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2041A1D4179C16F300ED7610 /* burger@2x.png */; };
 		207A4CE5179B328800727C39 /* Yrlxpowcjmaxlpvlfuedtlaekim.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 207A4CE1179B27BE00727C39 /* Yrlxpowcjmaxlpvlfuedtlaekim.ttf */; };
+		20E98CFA17A69D950085D7CA /* Default-568h@2x~iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = 20E98CF317A69D950085D7CA /* Default-568h@2x~iphone.png */; };
+		20E98CFB17A69D950085D7CA /* Default-Landscape@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 20E98CF417A69D950085D7CA /* Default-Landscape@2x~ipad.png */; };
+		20E98CFC17A69D950085D7CA /* Default-Landscape~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 20E98CF517A69D950085D7CA /* Default-Landscape~ipad.png */; };
+		20E98CFD17A69D950085D7CA /* Default-Portrait@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 20E98CF617A69D950085D7CA /* Default-Portrait@2x~ipad.png */; };
+		20E98CFE17A69D950085D7CA /* Default-Portrait~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 20E98CF717A69D950085D7CA /* Default-Portrait~ipad.png */; };
+		20E98CFF17A69D950085D7CA /* Default@2x~iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = 20E98CF817A69D950085D7CA /* Default@2x~iphone.png */; };
+		20E98D0017A69D950085D7CA /* Default~iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = 20E98CF917A69D950085D7CA /* Default~iphone.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -95,6 +99,13 @@
 		2041A1D4179C16F300ED7610 /* burger@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "burger@2x.png"; sourceTree = "<group>"; };
 		205B84F61798038500CC10E2 /* CordovaLib.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CordovaLib.xcodeproj; path = CordovaLib/CordovaLib.xcodeproj; sourceTree = "<group>"; };
 		207A4CE1179B27BE00727C39 /* Yrlxpowcjmaxlpvlfuedtlaekim.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Yrlxpowcjmaxlpvlfuedtlaekim.ttf; sourceTree = "<group>"; };
+		20E98CF317A69D950085D7CA /* Default-568h@2x~iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x~iphone.png"; sourceTree = "<group>"; };
+		20E98CF417A69D950085D7CA /* Default-Landscape@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Landscape@2x~ipad.png"; sourceTree = "<group>"; };
+		20E98CF517A69D950085D7CA /* Default-Landscape~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Landscape~ipad.png"; sourceTree = "<group>"; };
+		20E98CF617A69D950085D7CA /* Default-Portrait@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Portrait@2x~ipad.png"; sourceTree = "<group>"; };
+		20E98CF717A69D950085D7CA /* Default-Portrait~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Portrait~ipad.png"; sourceTree = "<group>"; };
+		20E98CF817A69D950085D7CA /* Default@2x~iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x~iphone.png"; sourceTree = "<group>"; };
+		20E98CF917A69D950085D7CA /* Default~iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default~iphone.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -169,6 +180,7 @@
 		2010FCE81797138B0092C107 /* NativeBook */ = {
 			isa = PBXGroup;
 			children = (
+				20E98CF217A69D950085D7CA /* splash */,
 				2010FD1017974EEF0092C107 /* Globals.h */,
 				2010FCF11797138B0092C107 /* AppDelegate.h */,
 				2010FCF21797138B0092C107 /* AppDelegate.m */,
@@ -210,6 +222,20 @@
 				205B84FB1798038500CC10E2 /* libCordova.a */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		20E98CF217A69D950085D7CA /* splash */ = {
+			isa = PBXGroup;
+			children = (
+				20E98CF317A69D950085D7CA /* Default-568h@2x~iphone.png */,
+				20E98CF417A69D950085D7CA /* Default-Landscape@2x~ipad.png */,
+				20E98CF517A69D950085D7CA /* Default-Landscape~ipad.png */,
+				20E98CF617A69D950085D7CA /* Default-Portrait@2x~ipad.png */,
+				20E98CF717A69D950085D7CA /* Default-Portrait~ipad.png */,
+				20E98CF817A69D950085D7CA /* Default@2x~iphone.png */,
+				20E98CF917A69D950085D7CA /* Default~iphone.png */,
+			);
+			path = splash;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -282,15 +308,19 @@
 				20166511179B3820002917F5 /* Vdnbrcupyyaykuzyblvvwuiwntx.ttf in Resources */,
 				207A4CE5179B328800727C39 /* Yrlxpowcjmaxlpvlfuedtlaekim.ttf in Resources */,
 				2010FCED1797138B0092C107 /* InfoPlist.strings in Resources */,
-				2010FCF51797138B0092C107 /* Default.png in Resources */,
-				2010FCF71797138B0092C107 /* Default@2x.png in Resources */,
-				2010FCF91797138B0092C107 /* Default-568h@2x.png in Resources */,
 				2010FCFF1797138B0092C107 /* RootViewController.xib in Resources */,
 				2010FD0F179746BE0092C107 /* tap@2x.png in Resources */,
 				2010FD14179759B70092C107 /* active@2x.png in Resources */,
 				2010FD1717975D120092C107 /* config.xml in Resources */,
 				2010FDC5179763A10092C107 /* www in Resources */,
 				2041A1D5179C16F300ED7610 /* burger@2x.png in Resources */,
+				20E98CFA17A69D950085D7CA /* Default-568h@2x~iphone.png in Resources */,
+				20E98CFB17A69D950085D7CA /* Default-Landscape@2x~ipad.png in Resources */,
+				20E98CFC17A69D950085D7CA /* Default-Landscape~ipad.png in Resources */,
+				20E98CFD17A69D950085D7CA /* Default-Portrait@2x~ipad.png in Resources */,
+				20E98CFE17A69D950085D7CA /* Default-Portrait~ipad.png in Resources */,
+				20E98CFF17A69D950085D7CA /* Default@2x~iphone.png in Resources */,
+				20E98D0017A69D950085D7CA /* Default~iphone.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -398,11 +428,13 @@
 					"“$(TARGET_BUILD_DIR)/usr/local/lib/include”",
 				);
 				INFOPLIST_FILE = "NativeBook/NativeBook-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				OTHER_LDFLAGS = (
 					"-Obj-C",
 					"-all_load",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 2;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -418,11 +450,13 @@
 					"“$(TARGET_BUILD_DIR)/usr/local/lib/include”",
 				);
 				INFOPLIST_FILE = "NativeBook/NativeBook-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				OTHER_LDFLAGS = (
 					"-Obj-C",
 					"-all_load",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 2;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
