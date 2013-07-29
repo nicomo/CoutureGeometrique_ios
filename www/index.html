@@ -24,6 +24,7 @@
           $('.wrap').append('<section id="chapter'+i+'">'+html+'</section>');
           popify();
           pinify();
+          inappbrowserify();
           $(".slideshow").slideshow();
           $('body').scrollTop(0);
         });
@@ -64,6 +65,15 @@
               window.pinterest.composePin(imageURL, sourceURL, descriptionText);
             });
           }
+        });
+      }
+
+      function inappbrowserify() {
+        $('a[target^="_"]').click(function(e) {
+          e.preventDefault();
+          var url = $(this).attr("href");
+          var target = $(this).attr("target");
+          window.open(url, target);
         });
       }
 
