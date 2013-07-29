@@ -111,12 +111,12 @@ int current;
     [self.cdvViewController.webView addSubview:self.activeview];
     [self.cdvViewController.webView bringSubviewToFront:self.activeview];
     
-    self.tapGRtop = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(handleGesture:)];
+    self.tapGRtop = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(handleTapOnPullView:)];
     self.tapGRtop.delegate = self;
     [self.pullviewtop addGestureRecognizer:self.tapGRtop];
     [self.tapGRtop release];
     
-    self.tapGRbottom = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(handleGesture:)];
+    self.tapGRbottom = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(handleTapOnPullView:)];
     self.tapGRbottom.delegate = self;
     [self.pullviewbottom addGestureRecognizer:self.tapGRbottom];
     [self.tapGRbottom release];
@@ -195,7 +195,7 @@ int current;
     self.dragging = NO;
 }
 
-- (void)handleGesture:(UITapGestureRecognizer *)gestureRecognizer
+- (void)handleTapOnPullView:(UITapGestureRecognizer *)gestureRecognizer
 {
     int next = self.triggeredbottom ? current + 1 : current -1;
     
