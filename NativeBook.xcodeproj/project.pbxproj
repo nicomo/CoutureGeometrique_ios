@@ -44,6 +44,8 @@
 		20E98CFE17A69D950085D7CA /* Default-Portrait~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 20E98CF717A69D950085D7CA /* Default-Portrait~ipad.png */; };
 		20E98CFF17A69D950085D7CA /* Default@2x~iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = 20E98CF817A69D950085D7CA /* Default@2x~iphone.png */; };
 		20E98D0017A69D950085D7CA /* Default~iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = 20E98CF917A69D950085D7CA /* Default~iphone.png */; };
+		20E98D0B17A6A16F0085D7CA /* icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = 20E98D0A17A6A16F0085D7CA /* icon-72.png */; };
+		20E98D0D17A6A1810085D7CA /* icon-72@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 20E98D0C17A6A1810085D7CA /* icon-72@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,9 +69,6 @@
 		2010FCF01797138B0092C107 /* NativeBook-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NativeBook-Prefix.pch"; sourceTree = "<group>"; };
 		2010FCF11797138B0092C107 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		2010FCF21797138B0092C107 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		2010FCF41797138B0092C107 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
-		2010FCF61797138B0092C107 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
-		2010FCF81797138B0092C107 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		2010FCFE1797138B0092C107 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/RootViewController.xib; sourceTree = "<group>"; };
 		2010FD051797141A0092C107 /* MasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
 		2010FD061797141A0092C107 /* MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
@@ -106,6 +105,8 @@
 		20E98CF717A69D950085D7CA /* Default-Portrait~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Portrait~ipad.png"; sourceTree = "<group>"; };
 		20E98CF817A69D950085D7CA /* Default@2x~iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x~iphone.png"; sourceTree = "<group>"; };
 		20E98CF917A69D950085D7CA /* Default~iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default~iphone.png"; sourceTree = "<group>"; };
+		20E98D0A17A6A16F0085D7CA /* icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon-72.png"; path = "../../icon-72.png"; sourceTree = "<group>"; };
+		20E98D0C17A6A1810085D7CA /* icon-72@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon-72@2x.png"; path = "../../icon-72@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -180,6 +181,7 @@
 		2010FCE81797138B0092C107 /* NativeBook */ = {
 			isa = PBXGroup;
 			children = (
+				20E98D0117A6A0EA0085D7CA /* icons */,
 				20E98CF217A69D950085D7CA /* splash */,
 				2010FD1017974EEF0092C107 /* Globals.h */,
 				2010FCF11797138B0092C107 /* AppDelegate.h */,
@@ -209,9 +211,6 @@
 				2010FCEB1797138B0092C107 /* InfoPlist.strings */,
 				2010FCEE1797138B0092C107 /* main.m */,
 				2010FCF01797138B0092C107 /* NativeBook-Prefix.pch */,
-				2010FCF41797138B0092C107 /* Default.png */,
-				2010FCF61797138B0092C107 /* Default@2x.png */,
-				2010FCF81797138B0092C107 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -236,6 +235,15 @@
 				20E98CF917A69D950085D7CA /* Default~iphone.png */,
 			);
 			path = splash;
+			sourceTree = "<group>";
+		};
+		20E98D0117A6A0EA0085D7CA /* icons */ = {
+			isa = PBXGroup;
+			children = (
+				20E98D0C17A6A1810085D7CA /* icon-72@2x.png */,
+				20E98D0A17A6A16F0085D7CA /* icon-72.png */,
+			);
+			path = icons;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -321,6 +329,8 @@
 				20E98CFE17A69D950085D7CA /* Default-Portrait~ipad.png in Resources */,
 				20E98CFF17A69D950085D7CA /* Default@2x~iphone.png in Resources */,
 				20E98D0017A69D950085D7CA /* Default~iphone.png in Resources */,
+				20E98D0B17A6A16F0085D7CA /* icon-72.png in Resources */,
+				20E98D0D17A6A1810085D7CA /* icon-72@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
