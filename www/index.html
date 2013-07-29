@@ -23,7 +23,7 @@
           $('section').remove();
           $('.wrap').append('<section id="chapter'+i+'">'+html+'</section>');
           popify();
-          //pinify();
+          pinify();
           $(".slideshow").slideshow();
           $('body').scrollTop(0);
         });
@@ -45,6 +45,24 @@
               $(this).remove();
               poped = false;
             }});
+          }
+        });
+      }
+
+      function pinify() {
+        var clientID = "1432309";
+        var baseURL = "http://pinterest.citronours.s3-website-us-east-1.amazonaws.com/";
+        var sourceURL = "http://www.citronours.fr";
+        var defaultText = "J'ai trouvé cette image dans un livre de citronours.fr"
+        window.pinterest.initPin(clientID);
+        window.pinterest.canPin(function(result) {
+          if (result) {
+            $('figure.pinterest').append('<button class="pinterest"></div>');
+            $('button.pinterest').click(function() {
+              var imageURL = $(this).parent().find('img').attr('src').replace('assets/img/', baseURL);
+              var descriptionText = $(this).parent().find('figcaption').html() || defaultText;
+              window.pinterest.composePin(imageURL, sourceURL, descriptionText);
+            });
           }
         });
       }

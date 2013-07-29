@@ -46,6 +46,9 @@
 		20E98D0017A69D950085D7CA /* Default~iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = 20E98CF917A69D950085D7CA /* Default~iphone.png */; };
 		20E98D0B17A6A16F0085D7CA /* icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = 20E98D0A17A6A16F0085D7CA /* icon-72.png */; };
 		20E98D0D17A6A1810085D7CA /* icon-72@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 20E98D0C17A6A1810085D7CA /* icon-72@2x.png */; };
+		20E98D1117A6A4440085D7CA /* PinterestPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 20E98D1017A6A4440085D7CA /* PinterestPlugin.m */; };
+		20E98D1617A6A4EE0085D7CA /* Pinterest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20E98D1317A6A4EE0085D7CA /* Pinterest.framework */; };
+		20E98D1717A6A4EE0085D7CA /* PinterestSDKResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 20E98D1517A6A4EE0085D7CA /* PinterestSDKResources.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,7 +82,7 @@
 		2010FD0E179746BE0092C107 /* tap@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tap@2x.png"; sourceTree = "<group>"; };
 		2010FD1017974EEF0092C107 /* Globals.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Globals.h; sourceTree = "<group>"; };
 		2010FD13179759B70092C107 /* active@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "active@2x.png"; sourceTree = "<group>"; };
-		2010FD1617975D120092C107 /* config.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = config.xml; sourceTree = "<group>"; };
+		2010FD1617975D120092C107 /* config.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = config.xml; path = NativeBook/config.xml; sourceTree = "<group>"; };
 		2010FD2017975E520092C107 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		2010FD2217975E5A0092C107 /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
 		2010FD2317975E5A0092C107 /* AddressBookUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBookUI.framework; path = System/Library/Frameworks/AddressBookUI.framework; sourceTree = SDKROOT; };
@@ -107,6 +110,10 @@
 		20E98CF917A69D950085D7CA /* Default~iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default~iphone.png"; sourceTree = "<group>"; };
 		20E98D0A17A6A16F0085D7CA /* icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon-72.png"; path = "../../icon-72.png"; sourceTree = "<group>"; };
 		20E98D0C17A6A1810085D7CA /* icon-72@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon-72@2x.png"; path = "../../icon-72@2x.png"; sourceTree = "<group>"; };
+		20E98D0F17A6A4440085D7CA /* PinterestPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PinterestPlugin.h; sourceTree = "<group>"; };
+		20E98D1017A6A4440085D7CA /* PinterestPlugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PinterestPlugin.m; sourceTree = "<group>"; };
+		20E98D1317A6A4EE0085D7CA /* Pinterest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Pinterest.framework; sourceTree = "<group>"; };
+		20E98D1517A6A4EE0085D7CA /* PinterestSDKResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = PinterestSDKResources.bundle; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +137,7 @@
 				2010FCE31797138B0092C107 /* UIKit.framework in Frameworks */,
 				2010FCE51797138B0092C107 /* Foundation.framework in Frameworks */,
 				2010FCE71797138B0092C107 /* CoreGraphics.framework in Frameworks */,
+				20E98D1617A6A4EE0085D7CA /* Pinterest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,7 +148,10 @@
 			isa = PBXGroup;
 			children = (
 				205B84F61798038500CC10E2 /* CordovaLib.xcodeproj */,
+				2010FD1617975D120092C107 /* config.xml */,
 				2010FDC4179763A10092C107 /* www */,
+				20E98D1217A6A4EE0085D7CA /* Pinterest.embeddedframework */,
+				20E98D0E17A6A4440085D7CA /* Plugins */,
 				2010FD3417975ED90092C107 /* libCordova.a */,
 				2010FDC2179762400092C107 /* AssetsLibrary.framework */,
 				2010FDC0179762230092C107 /* ImageIO.framework */,
@@ -196,7 +207,6 @@
 				2010FD0E179746BE0092C107 /* tap@2x.png */,
 				2010FD13179759B70092C107 /* active@2x.png */,
 				2041A1D4179C16F300ED7610 /* burger@2x.png */,
-				2010FD1617975D120092C107 /* config.xml */,
 				2016650F179B37F9002917F5 /* Vdnbrcupyyaykuzyblvvwuiwntx.ttf */,
 				207A4CE1179B27BE00727C39 /* Yrlxpowcjmaxlpvlfuedtlaekim.ttf */,
 				2010FCE91797138B0092C107 /* Supporting Files */,
@@ -244,6 +254,32 @@
 				20E98D0A17A6A16F0085D7CA /* icon-72.png */,
 			);
 			path = icons;
+			sourceTree = "<group>";
+		};
+		20E98D0E17A6A4440085D7CA /* Plugins */ = {
+			isa = PBXGroup;
+			children = (
+				20E98D0F17A6A4440085D7CA /* PinterestPlugin.h */,
+				20E98D1017A6A4440085D7CA /* PinterestPlugin.m */,
+			);
+			path = Plugins;
+			sourceTree = "<group>";
+		};
+		20E98D1217A6A4EE0085D7CA /* Pinterest.embeddedframework */ = {
+			isa = PBXGroup;
+			children = (
+				20E98D1317A6A4EE0085D7CA /* Pinterest.framework */,
+				20E98D1417A6A4EE0085D7CA /* Resources */,
+			);
+			path = Pinterest.embeddedframework;
+			sourceTree = "<group>";
+		};
+		20E98D1417A6A4EE0085D7CA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				20E98D1517A6A4EE0085D7CA /* PinterestSDKResources.bundle */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -331,6 +367,7 @@
 				20E98D0017A69D950085D7CA /* Default~iphone.png in Resources */,
 				20E98D0B17A6A16F0085D7CA /* icon-72.png in Resources */,
 				20E98D0D17A6A1810085D7CA /* icon-72@2x.png in Resources */,
+				20E98D1717A6A4EE0085D7CA /* PinterestSDKResources.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -346,6 +383,7 @@
 				2010FD0A1797156B0092C107 /* RootViewController.m in Sources */,
 				2010FCEF1797138B0092C107 /* main.m in Sources */,
 				2010FCF31797138B0092C107 /* AppDelegate.m in Sources */,
+				20E98D1117A6A4440085D7CA /* PinterestPlugin.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -430,6 +468,10 @@
 		2010FD031797138B0092C107 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/Pinterest.embeddedframework\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "NativeBook/NativeBook-Prefix.pch";
 				HEADER_SEARCH_PATHS = (
@@ -452,6 +494,10 @@
 		2010FD041797138B0092C107 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/Pinterest.embeddedframework\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "NativeBook/NativeBook-Prefix.pch";
 				HEADER_SEARCH_PATHS = (
