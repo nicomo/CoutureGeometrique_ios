@@ -68,7 +68,11 @@ NSArray* chapters;
         cell = [[[UIMasterViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:MasterCellIdentifier] autorelease];
     }
 
-    cell.primaryLabel.text = [[chapters.retain objectAtIndex:indexPath.row] uppercaseString];
+    if (indexPath.row == 0) {
+        cell.primaryLabel.text = [chapters.retain objectAtIndex:indexPath.row];
+    } else {
+        cell.primaryLabel.text = [[chapters.retain objectAtIndex:indexPath.row] uppercaseString];
+    }
     
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
     
