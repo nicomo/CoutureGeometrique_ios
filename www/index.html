@@ -38,7 +38,7 @@
       function popify() {
         $('.pop').append('&nbsp;<i class="icon-eye-open"></i>');
         var poped = false;
-        $('.pop').click(function() {
+          $('.pop').on({'touchend': function() {
           $('.ptr').css('opacity', 0);
           if (! poped) {
             poped = true;
@@ -52,7 +52,7 @@
               poped = false;
             }});
           }
-        });
+        }});
       }
 
       function pinify() {
