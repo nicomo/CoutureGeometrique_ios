@@ -113,8 +113,9 @@
     <feature name="AppAvailability">
         <param name="ios-package" value="AppAvailability" />
     </feature>
+    <feature name="PinterestPlugin">
+        <param name="ios-package" value="PinterestPlugin" />
+    </feature>
     <!-- Deprecated plugins element. REmove in 3.0 -->
-    <plugins>
-        <plugin name="PinterestPlugin" value="PinterestPlugin" onload="true" />
-    </plugins>
+    <plugins></plugins>
 </widget>
