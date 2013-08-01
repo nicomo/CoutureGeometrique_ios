@@ -88,47 +88,42 @@ NSArray* chapters;
     NSString* call = [NSString stringWithFormat:@"loadpage(%i)", next];
     
     RootViewController* root = (RootViewController*) self.parentViewController;
-    
-    [root.cdvViewController.webView stringByEvaluatingJavaScriptFromString:call];
-    
-    [UIView animateWithDuration:0.15 animations:^{
+
+    [UIView animateWithDuration:0.35 animations:^{
         CGRect fr = root.activeview.frame;
         fr.origin.y = 40*next;
         root.activeview.frame = fr;
-    }];
-
-    if (root.triggeredtop) {
-        root.triggeredtop = NO;
-        [UIView animateWithDuration:0.15 animations:^{
+        
+        if (root.triggeredtop) {
+            root.triggeredtop = NO;
             CGRect fr = root.pullviewtop.frame;
             fr.origin.y = -80;
             root.pullviewtop.frame = fr;
-        }];
-    }
-    
-    if (root.triggeredbottom) {
-        root.triggeredbottom = NO;
-        [UIView animateWithDuration:0.15 animations:^{
+            [root.cdvViewController.webView.scrollView setContentOffset:CGPointMake(0, 0) animated:YES];
+        }
+        
+        if (root.triggeredbottom) {
+            root.triggeredbottom = NO;
             CGRect fr = root.pullviewbottom.frame;
             fr.origin.y = root.cdvViewController.webView.scrollView.frame.size.height;
             root.pullviewbottom.frame = fr;
-        }];
-    }
-    
-    if (next > 0) root.chapternametop.text = [chapters objectAtIndex:next-1];
-    if (next < [chapters count]-1) root.chapternamebottom.text = [chapters objectAtIndex:next+1];
-    
-    if (root.triggeredburger) {
-        [UIView animateWithDuration:0.35 animations:^{
+            [root.cdvViewController.webView.scrollView setContentOffset:CGPointMake(0, root.cdvViewController.webView.scrollView.contentOffset.y-80) animated:YES];
+        }
+        
+        if (root.triggeredburger) {
             CGRect fr2 = root.cdvViewController.view.frame;
             fr2.origin.x = 0;
             root.cdvViewController.view.frame = fr2;
             root.cdvViewController.webView.scrollView.userInteractionEnabled = YES;
             root.triggeredburger = NO;
-        }];
-    }
-    
-    current = next;
+        }
+
+    } completion:^(BOOL finished){
+        [root.cdvViewController.webView stringByEvaluatingJavaScriptFromString:call];
+        if (next > 0) root.chapternametop.text = [chapters objectAtIndex:next-1];
+        if (next < [chapters count]-1) root.chapternamebottom.text = [chapters objectAtIndex:next+1];
+        current = next;
+    }];
 }
 
 - (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath {

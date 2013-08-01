@@ -219,39 +219,35 @@ int current;
     
     NSString* call = [NSString stringWithFormat:@"loadpage(%i, %i)", next, self.triggeredtop];
     
-    [self.cdvViewController.webView stringByEvaluatingJavaScriptFromString:call];
-    
-    [UIView animateWithDuration:0.15 animations:^{
+    [UIView animateWithDuration:0.35 animations:^{
         CGRect fr = self.activeview.frame;
         fr.origin.y = 40*next;
         self.activeview.frame = fr;
-    }];
-    
-    if (self.triggeredtop) {
-        self.triggeredtop = NO;
-        [UIView animateWithDuration:0.15 animations:^{
+        
+        if (self.triggeredtop) {
+            self.triggeredtop = NO;
             CGRect fr = self.pullviewtop.frame;
             fr.origin.y = -80;
             self.pullviewtop.frame = fr;
-        }];
-    }
-    
-    if (self.triggeredbottom) {
-        self.triggeredbottom = NO;
-        [UIView animateWithDuration:0.15 animations:^{
+            [self.cdvViewController.webView.scrollView setContentOffset:CGPointMake(0, 0) animated:YES];
+        }
+        
+        if (self.triggeredbottom) {
+            self.triggeredbottom = NO;
             CGRect fr = self.pullviewbottom.frame;
             fr.origin.y = self.cdvViewController.webView.scrollView.frame.size.height;
             self.pullviewbottom.frame = fr;
-        }];
-    }
-
-    if (next > 0) self.chapternametop.text = [chapters objectAtIndex:next-1];
-    if (next < [chapters count]-1) self.chapternamebottom.text = [chapters objectAtIndex:next+1];
-    
-    NSIndexPath *ip=[NSIndexPath indexPathForRow:next inSection:0];
-    [self.masterViewController.tableView selectRowAtIndexPath:ip animated:YES scrollPosition:UITableViewScrollPositionNone];
-    
-    current = next;
+            [self.cdvViewController.webView.scrollView setContentOffset:CGPointMake(0, self.cdvViewController.webView.scrollView.contentOffset.y-80) animated:YES];
+        }
+        
+    } completion:^(BOOL finished){
+        [self.cdvViewController.webView stringByEvaluatingJavaScriptFromString:call];
+        if (next > 0) self.chapternametop.text = [chapters objectAtIndex:next-1];
+        if (next < [chapters count]-1) self.chapternamebottom.text = [chapters objectAtIndex:next+1];
+        NSIndexPath *ip=[NSIndexPath indexPathForRow:next inSection:0];
+        [self.masterViewController.tableView selectRowAtIndexPath:ip animated:YES scrollPosition:UITableViewScrollPositionNone];
+        current = next;
+    }];
 }
 
 - (void)burgerPushed:(id)sender
