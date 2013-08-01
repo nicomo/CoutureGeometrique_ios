@@ -199,7 +199,7 @@ int current;
 {
     int next = self.triggeredbottom ? current + 1 : current -1;
     
-    NSString* call = [NSString stringWithFormat:@"loadpage(%i)", next];
+    NSString* call = [NSString stringWithFormat:@"loadpage(%i, %i)", next, self.triggeredtop];
     
     [self.cdvViewController.webView stringByEvaluatingJavaScriptFromString:call];
     

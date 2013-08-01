@@ -17,7 +17,7 @@
     <script src="framework/js/jquery.touchSwipe.min.js"></script>
     <script src="framework/js/jquery.slideshow.js"></script>
     <script type="text/javascript">
-      function loadpage(i) {
+      function loadpage(i, scrolltobottom) {
         $('<section>').load(i+'.html', function() {
           var html = $(this).html();
           $('section').remove();
@@ -26,7 +26,11 @@
           pinify();
           inappbrowserify();
           $(".slideshow").slideshow();
-          $('body').scrollTop(0);
+          if (scrolltobottom) {
+            $('body').scrollTop($('.wrap').outerHeight() - $(window).outerHeight());
+          } else {
+            $('body').scrollTop(0);
+          }
         });
       }
 
