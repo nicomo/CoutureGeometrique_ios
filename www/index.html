@@ -10,6 +10,7 @@
     <link href="style.css" rel="stylesheet">
     <script src="framework/js/cordova-2.7.0.js"></script>
     <script src="framework/js/PinterestPlugin.js"></script>
+    <script src="framework/js/AppAvailability.js"></script>
     <script src="framework/js/jquery-1.8.3.min.js"></script>
     <script src="framework/js/jquery.css3caching.js"></script>
     <!--<script src="framework/js/bootstrap.min.js"></script>-->
@@ -74,10 +75,20 @@
 
       function inappbrowserify() {
         $('a[target^="_"]').click(function(e) {
-          e.preventDefault();
-          var url = $(this).attr("href");
-          var target = $(this).attr("target");
-          window.open(url, target);
+                                  e.preventDefault();
+                                  var url = $(this).attr("href");
+                                  var alt = $(this).attr("alt");
+                                  var target = $(this).attr("target");
+                                  window.appavailability(url, function(availability) {
+                                                         // availability is either true or false
+                                                         if(availability) {
+                                                            window.open(url, target, 'location=no');
+                                                         } else {
+                                                            window.open(alt, '_blank', 'location=no');
+                                                         }
+                                                         });
+                                  
+          
         });
       }
 

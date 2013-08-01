@@ -37,6 +37,7 @@
 		20166511179B3820002917F5 /* Vdnbrcupyyaykuzyblvvwuiwntx.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2016650F179B37F9002917F5 /* Vdnbrcupyyaykuzyblvvwuiwntx.ttf */; };
 		2041A1D5179C16F300ED7610 /* burger@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2041A1D4179C16F300ED7610 /* burger@2x.png */; };
 		207A4CE5179B328800727C39 /* Yrlxpowcjmaxlpvlfuedtlaekim.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 207A4CE1179B27BE00727C39 /* Yrlxpowcjmaxlpvlfuedtlaekim.ttf */; };
+		207E959B17AAD38900F3CE06 /* AppAvailability.m in Sources */ = {isa = PBXBuildFile; fileRef = 207E959917AAD25500F3CE06 /* AppAvailability.m */; };
 		20D2BCC917A937330024F4BF /* tap.png in Resources */ = {isa = PBXBuildFile; fileRef = 20D2BCC617A937330024F4BF /* tap.png */; };
 		20D2BCCA17A937330024F4BF /* active.png in Resources */ = {isa = PBXBuildFile; fileRef = 20D2BCC717A937330024F4BF /* active.png */; };
 		20D2BCCB17A937330024F4BF /* burger.png in Resources */ = {isa = PBXBuildFile; fileRef = 20D2BCC817A937330024F4BF /* burger.png */; };
@@ -104,6 +105,8 @@
 		2041A1D4179C16F300ED7610 /* burger@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "burger@2x.png"; sourceTree = "<group>"; };
 		205B84F61798038500CC10E2 /* CordovaLib.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CordovaLib.xcodeproj; path = CordovaLib/CordovaLib.xcodeproj; sourceTree = "<group>"; };
 		207A4CE1179B27BE00727C39 /* Yrlxpowcjmaxlpvlfuedtlaekim.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Yrlxpowcjmaxlpvlfuedtlaekim.ttf; sourceTree = "<group>"; };
+		207E959817AAD25500F3CE06 /* AppAvailability.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppAvailability.h; sourceTree = "<group>"; };
+		207E959917AAD25500F3CE06 /* AppAvailability.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppAvailability.m; sourceTree = "<group>"; };
 		20D2BCC617A937330024F4BF /* tap.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tap.png; sourceTree = "<group>"; };
 		20D2BCC717A937330024F4BF /* active.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = active.png; sourceTree = "<group>"; };
 		20D2BCC817A937330024F4BF /* burger.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = burger.png; sourceTree = "<group>"; };
@@ -268,6 +271,8 @@
 		20E98D0E17A6A4440085D7CA /* Plugins */ = {
 			isa = PBXGroup;
 			children = (
+				207E959817AAD25500F3CE06 /* AppAvailability.h */,
+				207E959917AAD25500F3CE06 /* AppAvailability.m */,
 				20E98D0F17A6A4440085D7CA /* PinterestPlugin.h */,
 				20E98D1017A6A4440085D7CA /* PinterestPlugin.m */,
 			);
@@ -390,6 +395,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				207E959B17AAD38900F3CE06 /* AppAvailability.m in Sources */,
 				2010FD0D179715D10092C107 /* UIMasterViewCell.m in Sources */,
 				2010FD091797156B0092C107 /* MasterViewController.m in Sources */,
 				2010FD0A1797156B0092C107 /* RootViewController.m in Sources */,
