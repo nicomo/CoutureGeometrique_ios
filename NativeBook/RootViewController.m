@@ -12,10 +12,9 @@ int current;
 
 @interface RootViewController () <UIScrollViewDelegate, UIGestureRecognizerDelegate>
 @property (nonatomic, retain) UIImageView* splashImageView;
-@property (nonatomic, strong) UIImageView* burgerview;
+@property (nonatomic, strong) UIButton* burger;
 @property (nonatomic, readwrite, strong) UITapGestureRecognizer* tapGRtop;
 @property (nonatomic, readwrite, strong) UITapGestureRecognizer* tapGRbottom;
-@property (nonatomic, readwrite, strong) UITapGestureRecognizer* tapGRburger;
 @end
 
 @implementation RootViewController
@@ -57,8 +56,6 @@ int current;
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(webViewDidFinishLoad:)
                                                  name:CDVPageDidLoadNotification object:self.cdvViewController.webView];
     [self.view addSubview:self.cdvViewController.view];
-    
-        //[self.view bringSubviewToFront:self.masterViewController.tableView];
 
     // Top pull view
     self.pullviewtop = [[UIView alloc] initWithFrame:CGRectMake(0, -80, 768, 80)];
@@ -101,15 +98,16 @@ int current;
     [self.pullviewbottom addSubview:self.chapternamebottom];
     [self.cdvViewController.webView addSubview:self.pullviewbottom];
     
-    // Burger view
-    self.burgerview = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"burger.png"]];
-    self.burgerview.frame = CGRectMake(0, 0, 75, 75);
-    self.burgerview.userInteractionEnabled = YES;
+    // Burger
+    self.burger = [UIButton buttonWithType:UIButtonTypeCustom];
+    [self.burger setImage:[UIImage imageNamed:@"burger.png"] forState:UIControlStateNormal];
+    self.burger.frame = CGRectMake(0, 0, 75, 75);
     if (UIInterfaceOrientationIsLandscape([[UIApplication sharedApplication] statusBarOrientation])){
-        self.burgerview.hidden = YES;
+        self.burger.hidden = YES;
     }
-    [self.cdvViewController.webView addSubview:self.burgerview];
-    [self.cdvViewController.webView bringSubviewToFront:self.burgerview];
+    [self.burger addTarget:self action:@selector(burgerPushed:) forControlEvents:UIControlEventTouchUpInside];
+    [self.cdvViewController.webView addSubview:self.burger];
+    [self.cdvViewController.webView bringSubviewToFront:self.burger];
     
     // Active view
     self.activeview = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"active.png"]];
@@ -127,11 +125,6 @@ int current;
     [self.pullviewbottom addGestureRecognizer:self.tapGRbottom];
     [self.tapGRbottom release];
     
-    self.tapGRburger = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(handleTapOnBurger:)];
-    self.tapGRburger.delegate = self;
-    [self.burgerview addGestureRecognizer:self.tapGRburger];
-    [self.tapGRburger release];
-
     self.view.backgroundColor = [UIColor colorWithRed:.44 green:.46 blue:.49 alpha:1];
     self.view.autoresizesSubviews = YES;
 
@@ -261,7 +254,7 @@ int current;
     current = next;
 }
 
-- (void)handleTapOnBurger:(UITapGestureRecognizer *)gestureRecognizer
+- (void)burgerPushed:(id)sender
 {
     if (! self.triggeredburger) {
         [UIView animateWithDuration:0.35 animations:^{
@@ -300,10 +293,10 @@ int current;
 {
     if (toOrientation == UIInterfaceOrientationPortrait ||
         toOrientation == UIInterfaceOrientationPortraitUpsideDown) {
-        [self.burgerview setHidden:NO];
+        [self.burger setHidden:NO];
     } else if (toOrientation == UIInterfaceOrientationLandscapeLeft ||
         toOrientation == UIInterfaceOrientationLandscapeRight) {
-        [self.burgerview setHidden:YES];
+        [self.burger setHidden:YES];
         if (self.triggeredburger) {
             self.cdvViewController.view.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleRightMargin;
             self.cdvViewController.webView.scrollView.userInteractionEnabled = YES;
