@@ -200,6 +200,25 @@ a {
   background: #82be66;
 }
 
+#page #backmatter form input {
+  -webkit-appearance: none;
+  background: white;
+  border: #cb0078 solid 1px;
+  font-family: 'Roboto', sans-serif;
+  border-radius: 3px 0 0 3px;
+  margin-right: 0px;
+}
+
+#page #backmatter form input[type='submit'] {
+  background: #cb0078;
+  border: #cb0078 solid 1px;
+  border-radius: 0 3px 3px 0;
+  color: white;
+  font-weight: bold;
+  line-height: 28px;
+  margin-left: 0px;
+}
+
 /* Navigation */
 
 nav {
