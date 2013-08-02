@@ -90,6 +90,12 @@
                                   
           
         });
+
+        $('form').submit(function(e) {
+          e.preventDefault();
+          var url = $(this).attr('action') + '?' + $(this).serialize();
+          window.open(url, '_blank', 'location=no');
+        });
       }
 
       $.preload.images();
