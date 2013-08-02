@@ -66,14 +66,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		2010FCDF1797138B0092C107 /* NativeBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NativeBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2010FCDF1797138B0092C107 /* CoutureGeometrique.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoutureGeometrique.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2010FCE21797138B0092C107 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		2010FCE41797138B0092C107 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		2010FCE61797138B0092C107 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		2010FCEA1797138B0092C107 /* NativeBook-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "NativeBook-Info.plist"; sourceTree = "<group>"; };
+		2010FCEA1797138B0092C107 /* CoutureGeometrique-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CoutureGeometrique-Info.plist"; sourceTree = "<group>"; };
 		2010FCEC1797138B0092C107 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		2010FCEE1797138B0092C107 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		2010FCF01797138B0092C107 /* NativeBook-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NativeBook-Prefix.pch"; sourceTree = "<group>"; };
+		2010FCF01797138B0092C107 /* CoutureGeometrique-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CoutureGeometrique-Prefix.pch"; sourceTree = "<group>"; };
 		2010FCF11797138B0092C107 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		2010FCF21797138B0092C107 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		2010FCFE1797138B0092C107 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/RootViewController.xib; sourceTree = "<group>"; };
@@ -86,7 +86,7 @@
 		2010FD0E179746BE0092C107 /* tap@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tap@2x.png"; sourceTree = "<group>"; };
 		2010FD1017974EEF0092C107 /* Globals.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Globals.h; sourceTree = "<group>"; };
 		2010FD13179759B70092C107 /* active@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "active@2x.png"; sourceTree = "<group>"; };
-		2010FD1617975D120092C107 /* config.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = config.xml; path = NativeBook/config.xml; sourceTree = "<group>"; };
+		2010FD1617975D120092C107 /* config.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = config.xml; path = CoutureGeometrique/config.xml; sourceTree = "<group>"; };
 		2010FD2017975E520092C107 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		2010FD2217975E5A0092C107 /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
 		2010FD2317975E5A0092C107 /* AddressBookUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBookUI.framework; path = System/Library/Frameworks/AddressBookUI.framework; sourceTree = SDKROOT; };
@@ -174,7 +174,7 @@
 				2010FD2217975E5A0092C107 /* AddressBook.framework */,
 				2010FD2317975E5A0092C107 /* AddressBookUI.framework */,
 				2010FD2017975E520092C107 /* AudioToolbox.framework */,
-				2010FCE81797138B0092C107 /* NativeBook */,
+				2010FCE81797138B0092C107 /* CoutureGeometrique */,
 				2010FCE11797138B0092C107 /* Frameworks */,
 				2010FCE01797138B0092C107 /* Products */,
 			);
@@ -183,7 +183,7 @@
 		2010FCE01797138B0092C107 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2010FCDF1797138B0092C107 /* NativeBook.app */,
+				2010FCDF1797138B0092C107 /* CoutureGeometrique.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -198,7 +198,7 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		2010FCE81797138B0092C107 /* NativeBook */ = {
+		2010FCE81797138B0092C107 /* CoutureGeometrique */ = {
 			isa = PBXGroup;
 			children = (
 				20E98D0117A6A0EA0085D7CA /* icons */,
@@ -223,16 +223,16 @@
 				207A4CE1179B27BE00727C39 /* Yrlxpowcjmaxlpvlfuedtlaekim.ttf */,
 				2010FCE91797138B0092C107 /* Supporting Files */,
 			);
-			path = NativeBook;
+			path = CoutureGeometrique;
 			sourceTree = "<group>";
 		};
 		2010FCE91797138B0092C107 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				2010FCEA1797138B0092C107 /* NativeBook-Info.plist */,
+				2010FCEA1797138B0092C107 /* CoutureGeometrique-Info.plist */,
 				2010FCEB1797138B0092C107 /* InfoPlist.strings */,
 				2010FCEE1797138B0092C107 /* main.m */,
-				2010FCF01797138B0092C107 /* NativeBook-Prefix.pch */,
+				2010FCF01797138B0092C107 /* CoutureGeometrique-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -299,9 +299,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		2010FCDE1797138B0092C107 /* NativeBook */ = {
+		2010FCDE1797138B0092C107 /* CoutureGeometrique */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2010FD021797138B0092C107 /* Build configuration list for PBXNativeTarget "NativeBook" */;
+			buildConfigurationList = 2010FD021797138B0092C107 /* Build configuration list for PBXNativeTarget "CoutureGeometrique" */;
 			buildPhases = (
 				2010FCDB1797138B0092C107 /* Sources */,
 				2010FCDC1797138B0092C107 /* Frameworks */,
@@ -311,9 +311,9 @@
 			);
 			dependencies = (
 			);
-			name = NativeBook;
-			productName = NativeBook;
-			productReference = 2010FCDF1797138B0092C107 /* NativeBook.app */;
+			name = CoutureGeometrique;
+			productName = CoutureGeometrique;
+			productReference = 2010FCDF1797138B0092C107 /* CoutureGeometrique.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -323,9 +323,9 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0460;
-				ORGANIZATIONNAME = "Jean-André Santoni";
+				ORGANIZATIONNAME = "Citronours media";
 			};
-			buildConfigurationList = 2010FCDA1797138B0092C107 /* Build configuration list for PBXProject "NativeBook" */;
+			buildConfigurationList = 2010FCDA1797138B0092C107 /* Build configuration list for PBXProject "CoutureGeometrique" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -343,7 +343,7 @@
 			);
 			projectRoot = "";
 			targets = (
-				2010FCDE1797138B0092C107 /* NativeBook */,
+				2010FCDE1797138B0092C107 /* CoutureGeometrique */,
 			);
 		};
 /* End PBXProject section */
@@ -491,19 +491,19 @@
 					"\"$(SRCROOT)/Pinterest.embeddedframework\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "NativeBook/NativeBook-Prefix.pch";
+				GCC_PREFIX_HEADER = "CoutureGeometrique/CoutureGeometrique-Prefix.pch";
 				HEADER_SEARCH_PATHS = (
 					"“$(BUILT_PRODUCTS_DIR)”",
 					"“$(OBJROOT)/UninstalledProducts/include”",
 					"“$(TARGET_BUILD_DIR)/usr/local/lib/include”",
 				);
-				INFOPLIST_FILE = "NativeBook/NativeBook-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				INFOPLIST_FILE = "CoutureGeometrique/CoutureGeometrique-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				OTHER_LDFLAGS = (
 					"-Obj-C",
 					"-all_load",
 				);
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = CoutureGeometrique;
 				TARGETED_DEVICE_FAMILY = 2;
 				WRAPPER_EXTENSION = app;
 			};
@@ -517,19 +517,19 @@
 					"\"$(SRCROOT)/Pinterest.embeddedframework\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "NativeBook/NativeBook-Prefix.pch";
+				GCC_PREFIX_HEADER = "CoutureGeometrique/CoutureGeometrique-Prefix.pch";
 				HEADER_SEARCH_PATHS = (
 					"“$(BUILT_PRODUCTS_DIR)”",
 					"“$(OBJROOT)/UninstalledProducts/include”",
 					"“$(TARGET_BUILD_DIR)/usr/local/lib/include”",
 				);
-				INFOPLIST_FILE = "NativeBook/NativeBook-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				INFOPLIST_FILE = "CoutureGeometrique/CoutureGeometrique-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				OTHER_LDFLAGS = (
 					"-Obj-C",
 					"-all_load",
 				);
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = CoutureGeometrique;
 				TARGETED_DEVICE_FAMILY = 2;
 				WRAPPER_EXTENSION = app;
 			};
@@ -538,7 +538,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2010FCDA1797138B0092C107 /* Build configuration list for PBXProject "NativeBook" */ = {
+		2010FCDA1797138B0092C107 /* Build configuration list for PBXProject "CoutureGeometrique" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2010FD001797138B0092C107 /* Debug */,
@@ -547,7 +547,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2010FD021797138B0092C107 /* Build configuration list for PBXNativeTarget "NativeBook" */ = {
+		2010FD021797138B0092C107 /* Build configuration list for PBXNativeTarget "CoutureGeometrique" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2010FD031797138B0092C107 /* Debug */,
