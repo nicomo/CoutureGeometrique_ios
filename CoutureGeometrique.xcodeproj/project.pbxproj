@@ -30,7 +30,7 @@
 		2010FD2F17975E9D0092C107 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2010FD2E17975E9D0092C107 /* SystemConfiguration.framework */; };
 		2010FD3117975EA60092C107 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2010FD3017975EA60092C107 /* MobileCoreServices.framework */; };
 		2010FD3317975EB10092C107 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2010FD3217975EB10092C107 /* CoreMedia.framework */; };
-		2010FD3517975ED90092C107 /* libCordova.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2010FD3417975ED90092C107 /* libCordova.a */; };
+		2010FD3517975ED90092C107 /* libCordova.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2010FD3417975ED90092C107 /* libCordova.a */; settings = {ATTRIBUTES = (Required, ); }; };
 		2010FDC1179762230092C107 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2010FDC0179762230092C107 /* ImageIO.framework */; };
 		2010FDC3179762400092C107 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2010FDC2179762400092C107 /* AssetsLibrary.framework */; };
 		2010FDC5179763A10092C107 /* www in Resources */ = {isa = PBXBuildFile; fileRef = 2010FDC4179763A10092C107 /* www */; };
@@ -451,7 +451,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = 2;
@@ -475,7 +475,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = 2;
@@ -505,6 +505,7 @@
 				);
 				PRODUCT_NAME = CoutureGeometrique;
 				TARGETED_DEVICE_FAMILY = 2;
+				USER_HEADER_SEARCH_PATHS = "$(PROJECT_TEMP_DIR)/../UninstalledProducts/include/**";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -512,6 +513,7 @@
 		2010FD041797138B0092C107 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer: Amelie Morin Fontaine (4ZT7N33974)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/Pinterest.embeddedframework\"",
@@ -530,7 +532,9 @@
 					"-all_load",
 				);
 				PRODUCT_NAME = CoutureGeometrique;
+				PROVISIONING_PROFILE = "94F15803-B7AE-4712-8CC7-E7E82142F6EC";
 				TARGETED_DEVICE_FAMILY = 2;
+				USER_HEADER_SEARCH_PATHS = "$(PROJECT_TEMP_DIR)/../UninstalledProducts/include/**";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

@@ -7,8 +7,8 @@
 //
 
 #import "PinterestPlugin.h"
-#import <Cordova/CDV.h>
-#import <Pinterest/Pinterest.h>
+#import "Cordova/CDV.h"
+#import "Pinterest/Pinterest.h"
 
 @implementation PinterestPlugin {
 	Pinterest* pinterest;

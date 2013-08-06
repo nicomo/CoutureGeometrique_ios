@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <Cordova/CDV.h>
+#import "Cordova/CDV.h"
 
 @interface PinterestPlugin : CDVPlugin {}
 
