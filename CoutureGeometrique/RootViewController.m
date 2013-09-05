@@ -48,6 +48,7 @@ int current;
             view.hidden = YES;
         }
     }
+    self.cdvViewController.webView.scrollView.delegate = self;
     [self.view addSubview:self.cdvViewController.view];
 
     // Top pull view
