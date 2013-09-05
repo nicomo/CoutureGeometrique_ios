@@ -48,9 +48,6 @@ int current;
             view.hidden = YES;
         }
     }
-    self.cdvViewController.webView.scrollView.delegate = self;
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(webViewDidFinishLoad:)
-                                                 name:CDVPageDidLoadNotification object:self.cdvViewController.webView];
     [self.view addSubview:self.cdvViewController.view];
 
     // Top pull view
