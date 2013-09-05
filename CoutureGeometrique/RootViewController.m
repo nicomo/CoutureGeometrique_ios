@@ -11,7 +11,6 @@
 int current;
 
 @interface RootViewController () <UIScrollViewDelegate, UIGestureRecognizerDelegate>
-@property (nonatomic, retain) UIImageView* splashImageView;
 @property (nonatomic, strong) UIButton* burger;
 @property (nonatomic, readwrite, strong) UITapGestureRecognizer* tapGRtop;
 @property (nonatomic, readwrite, strong) UITapGestureRecognizer* tapGRbottom;
@@ -24,9 +23,6 @@ int current;
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
-    // SplashImageView
-    self.splashImageView = [[UIImageView alloc] init];
     
     // MasterView (menu)
     self.masterViewController = [[MasterViewController alloc] init];
@@ -132,25 +128,6 @@ int current;
     self.triggeredbottom = NO;
     self.triggeredburger = NO;
     self.dragging = NO;
-}
-
--(void)viewWillAppear:(BOOL)animated {
-    UIImage *defaultImage;
-    if (UIInterfaceOrientationIsLandscape([[UIApplication sharedApplication] statusBarOrientation])){
-        defaultImage = [UIImage imageNamed:@"Default-Landscape.png"];
-    } else {
-        defaultImage = [UIImage imageNamed:@"Default-Portrait.png"];
-    }
-    self.splashImageView = [[UIImageView alloc] initWithImage:defaultImage];
-    [self.view addSubview:self.splashImageView];
-}
-
-- (void) webViewDidFinishLoad:(UIWebView*) theWebView {
-    [UIView animateWithDuration:1.0f animations:^(void) {
-        [self.splashImageView setAlpha:0.0];
-    } completion:^(BOOL finished){
-        [self.splashImageView removeFromSuperview];
-    }];
 }
 
 - (void)didReceiveMemoryWarning
