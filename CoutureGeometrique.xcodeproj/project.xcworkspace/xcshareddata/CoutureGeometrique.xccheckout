@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>938136FF-E612-43EA-8DA9-389FF7E6A061</string>
+	<key>IDESourceControlProjectName</key>
+	<string>CoutureGeometrique</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>17BFE744-8035-4438-916E-88D0F529B547</key>
+		<string>https://github.com/nicomo/framework</string>
+		<key>2E8FC7B2-5527-452C-B197-C348C43B4AC7</key>
+		<string>ssh://github.com/nicomo/CoutureGeometrique_ios.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>CoutureGeometrique.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>17BFE744-8035-4438-916E-88D0F529B547</key>
+		<string>../../www/framework</string>
+		<key>2E8FC7B2-5527-452C-B197-C348C43B4AC7</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://github.com/nicomo/CoutureGeometrique_ios.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>2E8FC7B2-5527-452C-B197-C348C43B4AC7</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>2E8FC7B2-5527-452C-B197-C348C43B4AC7</string>
+			<key>IDESourceControlWCCName</key>
+			<string>CoutureGeometrique_ios</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>17BFE744-8035-4438-916E-88D0F529B547</string>
+			<key>IDESourceControlWCCName</key>
+			<string>framework</string>
+		</dict>
+	</array>
+</dict>
+</plist>
